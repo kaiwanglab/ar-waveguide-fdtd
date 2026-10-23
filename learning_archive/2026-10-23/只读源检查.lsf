@@ -1,0 +1,8 @@
+# Read-only source audit for the saved ENGINEERING_BASELINE_638nm project.
+# Open the intended project and ensure no simulation is running first.
+# Assumes group scope ::model and the two named source objects exist.
+# This script has no load, setnamed, switchtolayout, save, or run command.
+?"custom_source_enabled = "+num2str(getnamed("elliptical_gaussian_3d","enabled"));
+?"standard_source_enabled = "+num2str(getnamed("source","enabled"));
+?"wavelength_start_nm = "+num2str(getnamed("elliptical_gaussian_3d","wavelength start")*1e9);
+?"wavelength_stop_nm = "+num2str(getnamed("elliptical_gaussian_3d","wavelength stop")*1e9);

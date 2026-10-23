@@ -1,0 +1,111 @@
+{
+  "stage": "287-291",
+  "date": "2026-10-16",
+  "candidate_grating_z_span_um": 1.5,
+  "points": [
+    {
+      "wz_um": 0.45,
+      "incident_power_W": 5.570171652777991e-15,
+      "reference_incident_power_W": 5.570171652777991e-15,
+      "guided_forward": 0.07517451289293553,
+      "guided_backward": 4.71073190126095e-06,
+      "guided_net": 0.07516980216103426,
+      "tm_forward": 0.0751340017487265,
+      "te_forward": 3.89379090948765e-05,
+      "mode1": 0.06237727364614429,
+      "mode1_share": 0.8297662498323437,
+      "direct_scattered_net": 0.07520904968556631,
+      "unexpanded_net": 3.6581556276685245e-05,
+      "absolute_guided_net_power_W": 4.1870870114232284e-16,
+      "residual_relative_to_direct": 0.00048639833144582025
+    },
+    {
+      "wz_um": 0.55,
+      "incident_power_W": 6.807557395418483e-15,
+      "guided_net": 0.07718561545020437,
+      "mode1": 0.062019714634685724,
+      "mode1_share": 0.8034665446016098,
+      "absolute_guided_net_power_W": 5.254455072779659e-16
+    },
+    {
+      "wz_um": 0.65,
+      "incident_power_W": 8.045297289070808e-15,
+      "reference_incident_power_W": 8.045297289070808e-15,
+      "guided_forward": 0.07646965992797353,
+      "guided_backward": 4.321906838772596e-06,
+      "guided_net": 0.07646533802113475,
+      "tm_forward": 0.07642572470178308,
+      "te_forward": 4.3215907659570915e-05,
+      "mode1": 0.059747214094602076,
+      "mode1_share": 0.781319207524628,
+      "direct_scattered_net": 0.07649058687218431,
+      "unexpanded_net": 2.1419327604091376e-05,
+      "absolute_guided_net_power_W": 6.151863766893184e-16,
+      "residual_relative_to_direct": 0.00028002566694752975
+    }
+  ],
+  "endpoint_validation": {
+    "wz0p45": {
+      "grid_y_max_error": 0.0,
+      "grid_z_max_error": 0.0,
+      "sourcepower_ratio": 1.0,
+      "reconstruction_relative_error": 0.0,
+      "reference_interp_minus_native_pp": 0.0,
+      "nmodes": 32,
+      "guided_count": 28,
+      "a_linearity_error_max": 2.2215299868541707e-17,
+      "b_linearity_error_max": 3.434577253370758e-17
+    },
+    "wz0p65": {
+      "grid_y_max_error": 0.0,
+      "grid_z_max_error": 0.0,
+      "sourcepower_ratio": 1.0,
+      "reconstruction_relative_error": -1.753428453156466e-16,
+      "reference_interp_minus_native_pp": 0.0,
+      "nmodes": 32,
+      "guided_count": 28,
+      "a_linearity_error_max": 5.721958498152797e-17,
+      "b_linearity_error_max": 5.076104428597243e-17
+    }
+  },
+  "endpoint_gates": {
+    "wz0p45": {
+      "grid_match": true,
+      "source_match": true,
+      "coherent_reconstruction": true,
+      "reference_interpolation": true,
+      "fixed_basis": true,
+      "projection_linearity": true,
+      "efficiency_physical": true,
+      "mode1_physical": true,
+      "modal_residual_small": true
+    },
+    "wz0p65": {
+      "grid_match": true,
+      "source_match": true,
+      "coherent_reconstruction": true,
+      "reference_interpolation": true,
+      "fixed_basis": true,
+      "projection_linearity": true,
+      "efficiency_physical": true,
+      "mode1_physical": true,
+      "modal_residual_small": true
+    }
+  },
+  "all_validation_gates_pass": true,
+  "metrics": {
+    "nominal_guided_net": 0.07718561545020437,
+    "worst_endpoint_wz_um": 0.45,
+    "worst_endpoint_guided_net": 0.07516980216103426,
+    "three_point_span_pp": 0.20158132891701097,
+    "three_point_relative_span_percent": 2.6116437336314227,
+    "endpoint_relative_changes_from_nominal_percent": {
+      "wz0.45": -2.611643733631419,
+      "wz0.65": -0.9331757282343589
+    },
+    "illumination_local_2pct_pass": false,
+    "span_reduction_vs_width0p75_percent": 84.63476231962227,
+    "worst_endpoint_gain_vs_width0p75_percent": 16.056244231461214
+  },
+  "decision": "1.50 µm候选改善了有限光束覆盖，但仍未通过2%照明敏感性门槛。保留机器结果和最差端提升，不再盲目放大宽度；等待真实光斑/瞳孔规格后再决定是否继续。"
+}

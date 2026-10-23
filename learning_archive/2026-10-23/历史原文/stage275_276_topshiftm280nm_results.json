@@ -1,0 +1,43 @@
+{
+  "stage": "275/276",
+  "date": "2026-10-15",
+  "geometry": {
+    "wavelength_nm": 638,
+    "height_nm": 237,
+    "tooth_width_nm": 190,
+    "top_shift_nm": -280,
+    "grating_z_span_um": 0.75
+  },
+  "validation": {
+    "audit_pass": 1,
+    "grid_y_max_error": 0.0,
+    "grid_z_max_error": 0.0,
+    "sourcepower_ratio": 1.0,
+    "reconstruction_relative_error": 0.0,
+    "nmodes": 32,
+    "guided_count": 28,
+    "a_linearity_error_max": 7.850462293418876e-17,
+    "b_linearity_error_max": 5.847459249684319e-17
+  },
+  "results": {
+    "guided_scat_forward": 0.06464309618095578,
+    "guided_scat_backward": 3.707536517514715e-06,
+    "guided_scat_net": 0.06463938864443826,
+    "tm_guided_scat_forward": 0.06448197676957422,
+    "te_guided_scat_forward": 0.000158828698800166,
+    "mode1_scat_forward": 0.042806408795709995,
+    "mode1_fraction_guided_forward": 0.6621961404181783,
+    "scattered_direct_net": 0.06464453417436322,
+    "unexpanded_scattered_net": 3.4058314700435854e-07,
+    "eta_finite_beam_guided_net": 0.06463938864443826
+  },
+  "comparison_to_top_shift_m270": {
+    "baseline_guided_net": 0.06436614907183234,
+    "absolute_gain": 0.0002732395726059156,
+    "relative_gain_percent": 0.4245081872165102,
+    "baseline_mode1": 0.04272074995195037,
+    "mode1_absolute_gain": 0.00008565884375962701,
+    "mode1_relative_gain_percent": 0.2005087547759965
+  },
+  "decision": "The response remains monotonic with diminishing gain. Validate -290 nm next if continuing this variable."
+}

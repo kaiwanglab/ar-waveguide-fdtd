@@ -1,0 +1,43 @@
+{
+  "completed_at": "2026-10-13T18:38:00+08:00",
+  "geometry": {
+    "height_nm": 250,
+    "bottom_nm": -3.75,
+    "top_nm": 246.25,
+    "tooth_width_nm": 185,
+    "top_shift_nm": -240,
+    "grating_width_um": 0.75
+  },
+  "height_250nm": {
+    "nmodes256c": 32.0,
+    "guided_count256c": 28.0,
+    "PsrcP256c": 8.045297289070808e-15,
+    "PsrcR256c": 8.045297289070808e-15,
+    "a_linearity_error_max256c": 1.962615573354719e-17,
+    "b_linearity_error_max256c": 1.007073839388084e-16,
+    "guided_scat_forward256c": 0.0605432288044411,
+    "guided_scat_backward256c": 3.4504419315103003e-06,
+    "guided_scat_net256c": 0.060539778362509594,
+    "tm_guided_scat_forward256c": 0.06037670538510668,
+    "te_guided_scat_forward256c": 0.00016423769190996185,
+    "mode1_scat_forward256c": 0.04085144084167119,
+    "mode1_fraction_guided_forward256c": 0.6747483021367133,
+    "scattered_direct_net256c": 0.06055000725540975,
+    "unexpanded_scattered_net256c": 4.424313156781157e-06,
+    "eta_finite_beam_guided_net256c": 0.060539778362509594
+  },
+  "validation": {
+    "grid_y_max_error256a": 0.0,
+    "grid_z_max_error256a": 0.0,
+    "sourcepower_ratio256a": 1.0,
+    "reconstruction_relative_error256a": 2.2008066105876367e-16,
+    "reference_interp_minus_native_pp256a": 0.0
+  },
+  "height_260nm_reference": {
+    "guided_scat_net": 0.05564175006342553,
+    "mode1_scat_forward": 0.03770450127293184
+  },
+  "relative_net_change_vs_260nm": 0.08802793394350172,
+  "relative_mode1_change_vs_260nm": 0.08346323283683232,
+  "decision": "The height trend remains monotonic but the gain is shrinking. Validate 240 nm next."
+}

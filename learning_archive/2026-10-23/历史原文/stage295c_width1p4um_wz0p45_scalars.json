@@ -1,0 +1,18 @@
+﻿{
+  "nmodes295c": 32.0,
+  "PsrcP295c": 5.570171652777991e-15,
+  "PsrcR295c": 5.570171652777991e-15,
+  "a_linearity_error_max295c": 5.551115123125783e-17,
+  "b_linearity_error_max295c": 3.458859827302765e-17,
+  "guided_count295c": 28.0,
+  "guided_scat_forward295c": 0.07742464402279386,
+  "guided_scat_backward295c": 4.575966888200098e-06,
+  "guided_scat_net295c": 0.07742006805590566,
+  "tm_guided_scat_forward295c": 0.07736088465836766,
+  "te_guided_scat_forward295c": 6.265289608400794e-05,
+  "mode1_scat_forward295c": 0.06220314636620675,
+  "mode1_fraction_guided_forward295c": 0.80340241987931,
+  "scattered_direct_net295c": 0.07744924598370886,
+  "unexpanded_scattered_net295c": 2.620489525956282e-05,
+  "eta_finite_beam_guided_net295c": 0.07742006805590566
+}

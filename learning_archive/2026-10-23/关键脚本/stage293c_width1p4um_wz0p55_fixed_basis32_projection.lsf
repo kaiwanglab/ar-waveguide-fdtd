@@ -1,0 +1,140 @@
+# Stage293c: project patterned, matched-reference, and coherent-scattered fields
+# onto one fixed 32-mode basis from Stage293b. Analysis only; no FDTD run.
+
+pattern_mode_file293c="D:/FDTD_File/ar_incoupler_FDTD_stage293b_FINAL_GEOMETRY_WIDTH1P4UM_wz0p55um_zdomain2p8um_PATTERNED_FIXED_MODE_BASIS32_POSTRUN_638nm_COMPLETE.fsp";
+reference_file293c="D:/FDTD_File/ar_incoupler_FDTD_stage281c_FINAL_GEOMETRY_wx6um_wz0p55um_zdomain2p8um_REFERENCE_COMPLETE_638nm.fsp";
+
+load(pattern_mode_file293c);
+mode_profiles293c=getresult("mode_right","mode profiles");
+neff_ds293c=getresult("mode_right","neff");
+neff293c=pinch(neff_ds293c.neff);
+te_ds293c=getresult("mode_right","TE polarization fraction");
+te293c=pinch(getattribute(te_ds293c,"TE polarization fraction"));
+loss_ds293c=getresult("mode_right","loss");
+loss293c=pinch(loss_ds293c.loss);
+nmodes293c=length(neff293c);
+
+xP293c=getdata("power_right","x");
+yP293c=getdata("power_right","y");
+zP293c=getdata("power_right","z");
+fP293c=getdata("power_right","f");
+loaddata("D:/FDTD_File/stage281a_final_geometry_wz0p55_setup_audit.ldf");
+PsrcP293c=Pimport_direct_W281a;
+PatEH293c=getresult("power_right","E");
+PatH293c=getresult("power_right","H");
+PatEH293c.addattribute("H",PatH293c.H);
+ExP293c=pinch(getdata("power_right","Ex"));
+EyP293c=pinch(getdata("power_right","Ey"));
+EzP293c=pinch(getdata("power_right","Ez"));
+HxP293c=pinch(getdata("power_right","Hx"));
+HyP293c=pinch(getdata("power_right","Hy"));
+HzP293c=pinch(getdata("power_right","Hz"));
+yM293c=mode_profiles293c.y;
+zM293c=mode_profiles293c.z;
+
+load(reference_file293c);
+yR293c=getdata("power_right","y");
+zR293c=getdata("power_right","z");
+PsrcR293c=PsrcP293c;
+ExRi293c=interp(pinch(getdata("power_right","Ex")),yR293c,zR293c,yP293c,zP293c);
+EyRi293c=interp(pinch(getdata("power_right","Ey")),yR293c,zR293c,yP293c,zP293c);
+EzRi293c=interp(pinch(getdata("power_right","Ez")),yR293c,zR293c,yP293c,zP293c);
+HxRi293c=interp(pinch(getdata("power_right","Hx")),yR293c,zR293c,yP293c,zP293c);
+HyRi293c=interp(pinch(getdata("power_right","Hy")),yR293c,zR293c,yP293c,zP293c);
+HzRi293c=interp(pinch(getdata("power_right","Hz")),yR293c,zR293c,yP293c,zP293c);
+
+RefEH293c=rectilineardataset("interpolated_reference",xP293c,yP293c,zP293c);
+RefEH293c.addparameter("lambda",c/fP293c,"f",fP293c);
+RefEH293c.addattribute("E",ExRi293c,EyRi293c,EzRi293c);
+RefEH293c.addattribute("H",HxRi293c,HyRi293c,HzRi293c);
+ScatEH293c=rectilineardataset("coherent_scattered",xP293c,yP293c,zP293c);
+ScatEH293c.addparameter("lambda",c/fP293c,"f",fP293c);
+ScatEH293c.addattribute("E",ExP293c-ExRi293c,EyP293c-EyRi293c,EzP293c-EzRi293c);
+ScatEH293c.addattribute("H",HxP293c-HxRi293c,HyP293c-HyRi293c,HzP293c-HzRi293c);
+
+aPat293c=matrix(nmodes293c); bPat293c=matrix(nmodes293c);
+aRef293c=matrix(nmodes293c); bRef293c=matrix(nmodes293c);
+aScat293c=matrix(nmodes293c); bScat293c=matrix(nmodes293c);
+N293c=matrix(nmodes293c);
+TfPat_manual293c=matrix(nmodes293c); TbPat_manual293c=matrix(nmodes293c);
+TfRef293c=matrix(nmodes293c); TbRef293c=matrix(nmodes293c);
+TfScat293c=matrix(nmodes293c); TbScat293c=matrix(nmodes293c);
+
+for(i293c=1:nmodes293c) {
+  Eraw293c=pinch(getattribute(mode_profiles293c,"E"+num2str(i293c)));
+  Hraw293c=pinch(getattribute(mode_profiles293c,"H"+num2str(i293c)));
+  ExM293c=interp(pinch(Eraw293c(:,:,1)),yM293c,zM293c,yP293c,zP293c);
+  EyM293c=interp(pinch(Eraw293c(:,:,2)),yM293c,zM293c,yP293c,zP293c);
+  EzM293c=interp(pinch(Eraw293c(:,:,3)),yM293c,zM293c,yP293c,zP293c);
+  HxM293c=interp(pinch(Hraw293c(:,:,1)),yM293c,zM293c,yP293c,zP293c);
+  HyM293c=interp(pinch(Hraw293c(:,:,2)),yM293c,zM293c,yP293c,zP293c);
+  HzM293c=interp(pinch(Hraw293c(:,:,3)),yM293c,zM293c,yP293c,zP293c);
+  ModeEH293c=rectilineardataset("fixed_mode",xP293c,yP293c,zP293c);
+  ModeEH293c.addparameter("lambda",c/fP293c,"f",fP293c);
+  ModeEH293c.addattribute("E",ExM293c,EyM293c,EzM293c);
+  ModeEH293c.addattribute("H",HxM293c,HyM293c,HzM293c);
+
+  Mpat293c=expand(PatEH293c,ModeEH293c,0,0,0);
+  Mref293c=expand(RefEH293c,ModeEH293c,0,0,0);
+  Mscat293c=expand(ScatEH293c,ModeEH293c,0,0,0);
+  aPat293c(i293c)=pinch(Mpat293c,1,1); bPat293c(i293c)=pinch(Mpat293c,1,2);
+  N293c(i293c)=pinch(Mpat293c,1,3);
+  aRef293c(i293c)=pinch(Mref293c,1,1); bRef293c(i293c)=pinch(Mref293c,1,2);
+  aScat293c(i293c)=pinch(Mscat293c,1,1); bScat293c(i293c)=pinch(Mscat293c,1,2);
+  TfPat_manual293c(i293c)=abs(aPat293c(i293c))^2*real(N293c(i293c))/PsrcP293c;
+  TbPat_manual293c(i293c)=abs(bPat293c(i293c))^2*real(N293c(i293c))/PsrcP293c;
+  TfRef293c(i293c)=abs(aRef293c(i293c))^2*real(N293c(i293c))/PsrcP293c;
+  TbRef293c(i293c)=abs(bRef293c(i293c))^2*real(N293c(i293c))/PsrcP293c;
+  TfScat293c(i293c)=abs(aScat293c(i293c))^2*real(N293c(i293c))/PsrcP293c;
+  TbScat293c(i293c)=abs(bScat293c(i293c))^2*real(N293c(i293c))/PsrcP293c;
+}
+
+a_linearity_error_max293c=max(abs(aScat293c-(aPat293c-aRef293c)));
+b_linearity_error_max293c=max(abs(bScat293c-(bPat293c-bRef293c)));
+
+guided_count293c=0;
+guided_scat_forward293c=0; guided_scat_backward293c=0;
+tm_guided_scat_forward293c=0; te_guided_scat_forward293c=0;
+for(i293c=1:nmodes293c) {
+  if(real(neff293c(i293c))>1) {
+    guided_count293c=guided_count293c+1;
+    guided_scat_forward293c=guided_scat_forward293c+TfScat293c(i293c);
+    guided_scat_backward293c=guided_scat_backward293c+TbScat293c(i293c);
+    if(te293c(i293c)<0.1) { tm_guided_scat_forward293c=tm_guided_scat_forward293c+TfScat293c(i293c); }
+    if(te293c(i293c)>0.9) { te_guided_scat_forward293c=te_guided_scat_forward293c+TfScat293c(i293c); }
+  }
+}
+guided_scat_net293c=guided_scat_forward293c-guided_scat_backward293c;
+mode1_scat_forward293c=TfScat293c(1);
+mode1_fraction_guided_forward293c=mode1_scat_forward293c/guided_scat_forward293c;
+
+loaddata("D:/FDTD_File/stage293a_width1p4um_wz0p55_coherent_field_decomposition.ldf");
+scattered_direct_net293c=TS293a;
+unexpanded_scattered_net293c=scattered_direct_net293c-(sum(TfScat293c)-sum(TbScat293c));
+
+# Finite-beam efficiency is already normalized to total incident beam power.
+eta_finite_beam_guided_net293c=guided_scat_net293c;
+
+savedata("D:/FDTD_File/stage293c_width1p4um_wz0p55_fixed_basis32_projection.ldf",nmodes293c,neff293c,te293c,loss293c,PsrcP293c,PsrcR293c,aPat293c,bPat293c,aRef293c,bRef293c,aScat293c,bScat293c,N293c,TfPat_manual293c,TbPat_manual293c,TfRef293c,TbRef293c,TfScat293c,TbScat293c,a_linearity_error_max293c,b_linearity_error_max293c,guided_count293c,guided_scat_forward293c,guided_scat_backward293c,guided_scat_net293c,tm_guided_scat_forward293c,te_guided_scat_forward293c,mode1_scat_forward293c,mode1_fraction_guided_forward293c,scattered_direct_net293c,unexpanded_scattered_net293c,eta_finite_beam_guided_net293c);
+
+?"=== STAGE293C WIDTH1P4UM WZ0P55 FIXED-BASIS32 PROJECTION ===";
+?"a_linearity_error_max="+num2str(a_linearity_error_max293c)+", b_linearity_error_max="+num2str(b_linearity_error_max293c);
+?"guided_modes="+num2str(guided_count293c)+", guided_forward_percent="+num2str(guided_scat_forward293c*100)+", guided_net_percent="+num2str(guided_scat_net293c*100);
+?"TM_guided_forward_percent="+num2str(tm_guided_scat_forward293c*100)+", TE_guided_forward_percent="+num2str(te_guided_scat_forward293c*100);
+?"mode1_forward_percent="+num2str(mode1_scat_forward293c*100)+", mode1_guided_fraction_percent="+num2str(mode1_fraction_guided_forward293c*100);
+?"direct_scattered_net_percent="+num2str(scattered_direct_net293c*100)+", unexpanded_net_percent="+num2str(unexpanded_scattered_net293c*100);
+?"finite_beam_guided_net_efficiency_percent="+num2str(eta_finite_beam_guided_net293c*100);
+
+
+
+
+
+
+
+
+
+
+
+
+
+

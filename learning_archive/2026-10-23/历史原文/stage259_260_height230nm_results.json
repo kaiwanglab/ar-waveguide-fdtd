@@ -1,0 +1,23 @@
+{
+  "stage": "259/260",
+  "height_nm": 230,
+  "guided_scat_forward": 0.06214708691492676,
+  "guided_scat_backward": 0.0000034710007995523277,
+  "guided_scat_net": 0.062143615914127204,
+  "tm_guided_scat_forward": 0.06201827953866076,
+  "te_guided_scat_forward": 0.00012682248000298887,
+  "mode1_scat_forward": 0.04159888563440184,
+  "mode1_fraction_guided_forward": 0.6693617947265431,
+  "guided_mode_count": 28,
+  "mode_count": 32,
+  "sourcepower_ratio": 1.0,
+  "grid_y_max_error": 0.0,
+  "grid_z_max_error": 0.0,
+  "reconstruction_relative_error": 2.119265977330863e-16,
+  "unexpanded_scattered_net": 0.000005975613164926896,
+  "relative_net_change_vs_240_percent": -1.018394773,
+  "relative_mode1_change_vs_240_percent": -1.469658,
+  "quadratic_vertex_height_nm": 237.21804184501335,
+  "quadratic_vertex_net": 0.06289452711742494,
+  "complete_fsp": "D:/FDTD_File/ar_incoupler_FDTD_stage259b_HEIGHT230nm_WIDTH0p75um_wx6um_wz0p65um_zdomain2p8um_PATTERNED_COMPLETE_638nm.fsp"
+}

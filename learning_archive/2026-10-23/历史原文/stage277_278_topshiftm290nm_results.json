@@ -1,0 +1,9 @@
+{
+  "stage": "277/278",
+  "date": "2026-10-15",
+  "geometry": {"wavelength_nm": 638, "height_nm": 237, "tooth_width_nm": 190, "top_shift_nm": -290, "grating_z_span_um": 0.75},
+  "validation": {"audit_pass": 1, "grid_y_max_error": 0.0, "grid_z_max_error": 0.0, "sourcepower_ratio": 1.0, "reconstruction_relative_error": -2.0592327212269466e-16, "nmodes": 32, "guided_count": 28, "a_linearity_error_max": 1.1102230246251565e-16, "b_linearity_error_max": 5.834579367856217e-17},
+  "results": {"guided_scat_forward": 0.06477387939843293, "guided_scat_backward": 3.7305289619543745e-06, "guided_scat_net": 0.06477014886947098, "tm_guided_scat_forward": 0.06461222772918994, "te_guided_scat_forward": 0.00015937339811381596, "mode1_scat_forward": 0.04279420136018003, "mode1_fraction_guided_forward": 0.6606706554805384, "scattered_direct_net": 0.06477382524976753, "unexpanded_scattered_net": -1.1512792878337619e-06, "eta_finite_beam_guided_net": 0.06477014886947098},
+  "comparison_to_top_shift_m280": {"baseline_guided_net": 0.06463938864443826, "absolute_gain": 0.00013076022503272222, "relative_gain_percent": 0.2022918653392436, "baseline_mode1": 0.042806408795709995, "mode1_absolute_gain": -0.000012207435529966448, "mode1_relative_gain_percent": -0.028517775429903747},
+  "decision": "Total guided net still rises but mode1 has turned down. Validate -300 nm once, then apply separate total-power and mode1 stop decisions."
+}

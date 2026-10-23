@@ -1,0 +1,43 @@
+{
+  "completed_at": "2026-10-13T20:18:00+08:00",
+  "geometry": {
+    "height_nm": 240,
+    "bottom_nm": -3.75,
+    "top_nm": 236.25,
+    "tooth_width_nm": 185,
+    "top_shift_nm": -240,
+    "grating_width_um": 0.75
+  },
+  "height_240nm": {
+    "nmodes258c": 32.0,
+    "guided_count258c": 28.0,
+    "PsrcP258c": 8.045297289070808e-15,
+    "PsrcR258c": 8.045297289070808e-15,
+    "a_linearity_error_max258c": 5.551115123125783e-17,
+    "b_linearity_error_max258c": 6.628369094757308e-17,
+    "guided_scat_forward258c": 0.06278648310073053,
+    "guided_scat_backward258c": 3.5012071714352825e-06,
+    "guided_scat_net258c": 0.06278298189355909,
+    "tm_guided_scat_forward258c": 0.06263616264193757,
+    "te_guided_scat_forward258c": 0.0001481487570489502,
+    "mode1_scat_forward258c": 0.04221937058340466,
+    "mode1_fraction_guided_forward258c": 0.672427702562519,
+    "scattered_direct_net258c": 0.06279114642969716,
+    "unexpanded_scattered_net258c": 3.7997110708121173e-06,
+    "eta_finite_beam_guided_net258c": 0.06278298189355909
+  },
+  "validation": {
+    "grid_y_max_error258a": 0.0,
+    "grid_z_max_error258a": 0.0,
+    "sourcepower_ratio258a": 1.0,
+    "reconstruction_relative_error258a": 0.0,
+    "reference_interp_minus_native_pp258a": 0.0
+  },
+  "height_250nm_reference": {
+    "guided_scat_net": 0.060539778362509594,
+    "mode1_scat_forward": 0.04085144084167119
+  },
+  "relative_net_change_vs_250nm": 0.03705338195355279,
+  "relative_mode1_change_vs_250nm": 0.0334854711008894,
+  "decision": "The trend remains monotonic, but the gain has narrowed to 3.71 percent. Validate 230 nm next to bracket the peak."
+}

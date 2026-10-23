@@ -1,0 +1,68 @@
+{
+  "stage": "285/286",
+  "date": "2026-10-15",
+  "candidate": {
+    "grating_z_span_um": 1.5,
+    "wz_um": 0.55,
+    "analytic_power_overlap": 0.9936139767172929
+  },
+  "validation": {
+    "grid_y_max_error": 0.0,
+    "grid_z_max_error": 0.0,
+    "sourcepower_ratio": 1.0,
+    "reconstruction_relative_error": 0.0,
+    "reference_interp_minus_native_pp": 0.0,
+    "nmodes": 32,
+    "guided_count": 28,
+    "a_linearity_error_max": 1.1102230246251565e-16,
+    "b_linearity_error_max": 3.781736964655828e-17
+  },
+  "validation_gates": {
+    "grid_match": true,
+    "source_match": true,
+    "coherent_reconstruction": true,
+    "reference_interpolation": true,
+    "fixed_basis": true,
+    "projection_linearity": true,
+    "efficiency_physical": true,
+    "mode1_physical": true,
+    "modal_residual_small": true
+  },
+  "all_validation_gates_pass": true,
+  "result": {
+    "incident_power_W": 6.807557395418483e-15,
+    "reference_incident_power_W": 6.807557395418483e-15,
+    "guided_scat_forward": 0.07719016435891245,
+    "guided_scat_backward": 4.54890870806776e-06,
+    "guided_scat_net": 0.07718561545020437,
+    "tm_guided_scat_forward": 0.07715045964685317,
+    "te_guided_scat_forward": 3.8676776082977485e-05,
+    "mode1_scat_forward": 0.062019714634685724,
+    "mode1_fraction_guided_forward": 0.8034665446016098,
+    "scattered_direct_net": 0.07721708231076765,
+    "unexpanded_scattered_net": 2.8214053042929788e-05,
+    "absolute_guided_net_power_W": 5.254455072779659e-16,
+    "modal_residual_relative_to_direct": 0.0003653861580703035
+  },
+  "baseline_width0p75_wz0p55": {
+    "guided_scat_forward": 0.07103736116786605,
+    "guided_scat_backward": 4.118124458657831e-06,
+    "guided_scat_net": 0.07103324304340738,
+    "tm_guided_scat_forward": 0.07084709698143703,
+    "te_guided_scat_forward": 0.0001876117966514614,
+    "mode1_scat_forward": 0.04695634599123608,
+    "mode1_fraction_guided_forward": 0.6610091537645253,
+    "scattered_direct_net": 0.07103935068362063,
+    "unexpanded_scattered_net": 5.135682860646362e-07,
+    "absolute_guided_net_power_W": 4.835628790007065e-16
+  },
+  "comparison": {
+    "guided_net_retention": 1.0866125794515304,
+    "guided_net_change_percent": 8.661257945153045,
+    "mode1_retention": 1.3207951625167142,
+    "mode1_change_percent": 32.07951625167142,
+    "mode1_share_change_pp": 14.245739083708454,
+    "nominal_screen_pass": true
+  },
+  "decision": "1.50 µm候选通过名义点90%性能保留门槛，可进入wz=0.45/0.65 µm端点验证；当前单点结果尚不能证明照明鲁棒性。"
+}

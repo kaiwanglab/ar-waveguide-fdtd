@@ -1,0 +1,97 @@
+{
+  "stage": "283/284",
+  "date": "2026-10-15",
+  "geometry": {
+    "wavelength_nm": 638,
+    "period_nm": 328.75,
+    "tooth_height_nm": 237,
+    "tooth_width_nm": 190,
+    "top_shift_nm": -290,
+    "grating_z_span_um": 0.75,
+    "wx_um": 6.0,
+    "wz_um": 0.45
+  },
+  "validation": {
+    "grid_y_max_error": 0.0,
+    "grid_z_max_error": 0.0,
+    "sourcepower_ratio": 1.0,
+    "reconstruction_relative_error": 1.235826031416878e-16,
+    "reference_interp_minus_native_pp": 0.0,
+    "nmodes": 32,
+    "guided_count": 28,
+    "a_linearity_error_max": 6.206335383118183e-17,
+    "b_linearity_error_max": 7.067933836950176e-17
+  },
+  "validation_gates": {
+    "grid_match": true,
+    "source_match": true,
+    "coherent_reconstruction": true,
+    "reference_interpolation": true,
+    "fixed_basis": true,
+    "projection_linearity": true,
+    "efficiency_physical": true,
+    "mode1_physical": true,
+    "modal_residual_small": true
+  },
+  "all_validation_gates_pass": true,
+  "results_wz0p45": {
+    "incident_power_W": 5.570171652777991e-15,
+    "reference_incident_power_W": 5.570171652777991e-15,
+    "guided_scat_forward": 0.07684821450707759,
+    "guided_scat_backward": 4.479277745486768e-06,
+    "guided_scat_net": 0.0768437352293321,
+    "tm_guided_scat_forward": 0.07662835809547691,
+    "te_guided_scat_forward": 0.00021683176963376534,
+    "mode1_scat_forward": 0.050869913475137106,
+    "mode1_fraction_guided_forward": 0.6619530954808596,
+    "scattered_direct_net": 0.07685282419002192,
+    "unexpanded_scattered_net": 2.6471358646890097e-06,
+    "eta_finite_beam_guided_net": 0.0768437352293321,
+    "absolute_guided_net_power_W": 4.2803279566800314e-16,
+    "modal_residual_relative_to_direct": 3.444422365200077e-05
+  },
+  "three_point_illumination_gate": {
+    "points": [
+      {
+        "wz_um": 0.45,
+        "incident_power_W": 5.570171652777991e-15,
+        "guided_net": 0.0768437352293321,
+        "mode1": 0.050869913475137106,
+        "mode1_share": 0.6619530954808596,
+        "absolute_guided_net_power_W": 4.2803279566800314e-16
+      },
+      {
+        "wz_um": 0.55,
+        "incident_power_W": 6.807557395418483e-15,
+        "guided_net": 0.07103324304340738,
+        "mode1": 0.04695634599123608,
+        "mode1_share": 0.6610091537645253,
+        "absolute_guided_net_power_W": 4.835628790007065e-16
+      },
+      {
+        "wz_um": 0.65,
+        "incident_power_W": 8.045297289070808e-15,
+        "guided_net": 0.06477014886947098,
+        "mode1": 0.04279420136018003,
+        "mode1_share": 0.6606706554805384,
+        "absolute_guided_net_power_W": 5.210951031122675e-16
+      }
+    ],
+    "best_normalized_efficiency_wz_um": 0.45,
+    "best_absolute_guided_power_wz_um": 0.65,
+    "nominal_wz_um": 0.55,
+    "nominal_guided_net": 0.07103324304340738,
+    "worst_endpoint_wz_um": 0.65,
+    "worst_endpoint_guided_net": 0.06477014886947098,
+    "three_point_span_pp": 1.2073586359861124,
+    "three_point_relative_span_percent": 16.99709297023526,
+    "endpoint_relative_changes_from_nominal_percent": {
+      "wz0.45": 8.179961855851081,
+      "wz0.65": -8.81713111438417
+    },
+    "illumination_local_2pct_pass": false,
+    "nominal_wz0p55_efficiency_gap_to_best_percent": 7.561439027636949,
+    "nominal_wz0p55_power_gap_to_best_percent": 7.202567033809734
+  },
+  "decision": "结果在数值上有效，但未通过临时2%照明敏感性门槛。继续以wz=0.55 µm作为比较名义点，以0.45/0.65 µm作为容差端点，不优化wz本身。下一轮几何候选必须按名义效率、最差端效率和三点跨度排序，直到真实投影光机的光斑/瞳孔数据替换该临时门槛。"
+}

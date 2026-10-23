@@ -1,0 +1,43 @@
+{
+  "stage": "271/272",
+  "date": "2026-10-14",
+  "geometry": {
+    "wavelength_nm": 638,
+    "height_nm": 237,
+    "tooth_width_nm": 190,
+    "top_shift_nm": -260,
+    "grating_z_span_um": 0.75
+  },
+  "validation": {
+    "audit_pass": 1,
+    "grid_y_max_error": 0.0,
+    "grid_z_max_error": 0.0,
+    "sourcepower_ratio": 1.0,
+    "reconstruction_relative_error": 0.0,
+    "nmodes": 32,
+    "guided_count": 28,
+    "a_linearity_error_max": 7.850462293418876e-17,
+    "b_linearity_error_max": 5.2086859779582024e-17
+  },
+  "results": {
+    "guided_scat_forward": 0.06400827765681384,
+    "guided_scat_backward": 3.6436654409455767e-06,
+    "guided_scat_net": 0.06400463399137289,
+    "tm_guided_scat_forward": 0.0638522491032209,
+    "te_guided_scat_forward": 0.00015377601034434162,
+    "mode1_scat_forward": 0.04257261783023423,
+    "mode1_fraction_guided_forward": 0.6651111291963074,
+    "scattered_direct_net": 0.06401259645985297,
+    "unexpanded_scattered_net": 3.2950988592822528e-06,
+    "eta_finite_beam_guided_net": 0.06400463399137289
+  },
+  "comparison_to_top_shift_m250": {
+    "baseline_guided_net": 0.06353260339195298,
+    "absolute_gain": 0.00047203059941991476,
+    "relative_gain_percent": 0.7429738027699084,
+    "baseline_mode1": 0.04234499539772395,
+    "mode1_absolute_gain": 0.0002276224325102813,
+    "mode1_relative_gain_percent": 0.537542702206828
+  },
+  "decision": "The response is still monotonic toward more-negative top shift. Validate -270 nm next."
+}

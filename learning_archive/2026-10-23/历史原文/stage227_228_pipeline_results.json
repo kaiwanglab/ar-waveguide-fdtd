@@ -1,0 +1,163 @@
+{
+  "stage227b": {
+    "status227b": 2.0,
+    "Pin227b": 8.045297289070808e-15,
+    "Pright_W227b": 3.375161476493247e-17,
+    "Pleft_signed_W227b": -1.7104934725998942e-16,
+    "Ptop_signed_W227b": -3.043156659507786e-15,
+    "eta_right227b": 0.004195197958785513,
+    "eta_left_out227b": 0.021260786409018427,
+    "eta_top_signed227b": -0.3782528538307446
+  },
+  "stage227c": {
+    "status227c": 2.0,
+    "Pin227c": 8.045297289070808e-15,
+    "disabled227c": 24.0,
+    "Pright_W227c": -4.281677698988853e-17,
+    "Pleft_signed_W227c": -1.584742847228384e-16,
+    "Ptop_signed_W227c": -2.0400756103571187e-15,
+    "eta_right227c": -0.005321963309926818,
+    "eta_left_out227c": 0.019697753734733824,
+    "eta_top_signed227c": -0.2535736762802382
+  },
+  "stage228a": {
+    "grid_y_max_error228a": 4.382655778448464e-10,
+    "grid_z_max_error228a": 0.0,
+    "PsrcP228a": 8.045297289070808e-15,
+    "PsrcR228a": 8.045297289070808e-15,
+    "sourcepower_ratio228a": 1.0,
+    "reference_native_signed228a": -0.005321963309926818,
+    "reference_native_on_pattern_norm228a": -0.005321963309926818,
+    "reference_interp_minus_native_pp228a": 0.00018300014834361777,
+    "PP228a": 3.375161476493247e-17,
+    "PRi228a": -4.2802054083914844e-17,
+    "PS228a": 7.64878391392946e-17,
+    "PX228a": 6.582970955270109e-20,
+    "Preconstructed228a": 3.375161476493246e-17,
+    "reconstruction_error_W228a": 1.232595164407831e-32,
+    "reconstruction_relative_error228a": 3.6519590928979276e-16,
+    "TP228a": 0.004195197958785513,
+    "TRi228a": -0.005320133308443381,
+    "TS228a": 0.009507148883509882,
+    "TX228a": 8.182383719011595e-06
+  },
+  "stage228b": {
+    "mode_update_status228b": 1.0,
+    "Psrc228b": 8.045297289070808e-15,
+    "nmodes228b": 32.0,
+    "guided_count228b": 28.0
+  },
+  "stage228c": {
+    "nmodes228c": 32.0,
+    "PsrcP228c": 8.045297289070808e-15,
+    "PsrcR228c": 8.045297289070808e-15,
+    "a_linearity_error_max228c": 3.1031676915590914e-17,
+    "b_linearity_error_max228c": 4.163562211670007e-17,
+    "guided_count228c": 28.0,
+    "guided_scat_forward228c": 0.009494544839936963,
+    "guided_scat_backward228c": 7.246116550794932e-07,
+    "guided_scat_net228c": 0.009493820228281883,
+    "tm_guided_scat_forward228c": 0.009310203423943684,
+    "te_guided_scat_forward228c": 0.00018098809822377304,
+    "mode1_scat_forward228c": 0.006070697594951392,
+    "mode1_fraction_guided_forward228c": 0.6393879535347686,
+    "scattered_direct_net228c": 0.009507148883509882,
+    "unexpanded_scattered_net228c": 8.306900568789272e-06,
+    "eta_finite_beam_guided_net228c": 0.009493820228281883
+  },
+  "three_point_waist_sensitivity": {
+    "wz_um": [
+      0.45,
+      0.55,
+      0.65
+    ],
+    "guided_net_fraction": [
+      0.010552833771102107,
+      0.00983921061257895,
+      0.009493820228281883
+    ],
+    "guided_net_percent": [
+      1.0552833771102106,
+      0.983921061257895,
+      0.9493820228281883
+    ],
+    "delta_0p45_to_0p55_percentage_point": -0.07136231585231564,
+    "delta_0p55_to_0p65_percentage_point": -0.03453903842970674,
+    "delta_0p45_to_0p65_percentage_point": -0.10590135428202238,
+    "relative_0p45_to_0p55": -0.06762384151992828,
+    "relative_0p55_to_0p65": -0.035103464891330094,
+    "relative_0p45_to_0p65": -0.10035347526464666,
+    "absolute_limit_percentage_point": 0.02,
+    "relative_limit": 0.02,
+    "locally_insensitive_0p55_to_0p65": false,
+    "trend": "monotonic_decrease",
+    "next_action": "stop blind waist sweeps; fix the physical illumination or pupil specification before geometry optimization"
+  },
+  "artifacts": {
+    "stage225_226_baseline_report": {
+      "path": "D:\\Codex\\Kai\\stage225_226_pipeline_results.json",
+      "bytes": 5842,
+      "mtime_ns": 1791636918541738000,
+      "sha256": "ffd6f4dae7d6c60271bdc4945dadd536e81e838c706c7fff005f27329f26c62e"
+    },
+    "stage227b_ldf": {
+      "path": "D:\\FDTD_File\\stage227b_elliptical_gaussian_wz0p65_patterned_direct_power.ldf",
+      "bytes": 466,
+      "mtime_ns": 1791643066857694400,
+      "sha256": "9a9e93259b3b88a9b6c23c6af89276c419bee68b61c585d4d5d7d152f5a87468"
+    },
+    "stage227c_ldf": {
+      "path": "D:\\FDTD_File\\stage227c_elliptical_gaussian_wz0p65_reference_direct_power.ldf",
+      "bytes": 515,
+      "mtime_ns": 1791705995598676000,
+      "sha256": "ca5fb483f9f5637d44e4ffbfb58f92b396d79a3823efebfd0d8a6e30f26f04fb"
+    },
+    "stage227c_fsp": {
+      "path": "D:\\FDTD_File\\ar_incoupler_FDTD_stage227c_ELLIPTICAL_GAUSSIAN_wx6um_wz0p65um_zdomain2p8um_REFERENCE_COMPLETE_638nm.fsp",
+      "bytes": 183931288,
+      "mtime_ns": 1791705996632130200
+    },
+    "stage228a_lsf": {
+      "path": "D:\\Codex\\Kai\\stage228a_elliptical_gaussian_wz0p65_coherent_field_decomposition.lsf",
+      "bytes": 3955,
+      "mtime_ns": 1791637721996225700,
+      "sha256": "cbe5925a460843805e52d032eafbc9164c175b86884122b235780c8c24656ef9"
+    },
+    "stage228a_ldf": {
+      "path": "D:\\FDTD_File\\stage228a_elliptical_gaussian_wz0p65_coherent_field_decomposition.ldf",
+      "bytes": 4861,
+      "mtime_ns": 1791708256914624100,
+      "sha256": "804b10b58a3f8f01a023b04105e11a2e71ab00fc188d80efb0af3df70e3826c5"
+    },
+    "stage228b_lsf": {
+      "path": "D:\\Codex\\Kai\\stage228b_elliptical_gaussian_wz0p65_patterned_fixed_mode_basis32.lsf",
+      "bytes": 2030,
+      "mtime_ns": 1791637722088855300,
+      "sha256": "d770eba2470ca2368520127006d1a075f249769763cb66cc09c9956090ae7dad"
+    },
+    "stage228b_ldf": {
+      "path": "D:\\FDTD_File\\stage228b_elliptical_gaussian_wz0p65_patterned_fixed_mode_basis32.ldf",
+      "bytes": 22895541,
+      "mtime_ns": 1791708269103663900,
+      "sha256": "b85ea39a1b64b307aed9c727d6ceb5368bcef2a1c03f7356937f11a06f1d3fbb"
+    },
+    "stage228c_lsf": {
+      "path": "D:\\Codex\\Kai\\stage228c_elliptical_gaussian_wz0p65_fixed_basis32_projection.lsf",
+      "bytes": 7561,
+      "mtime_ns": 1791637722100857900,
+      "sha256": "512f7778270f0cf42f53fe792eaf9313bb2e1ce011d486e5318e07a5011032dd"
+    },
+    "stage228c_ldf": {
+      "path": "D:\\FDTD_File\\stage228c_elliptical_gaussian_wz0p65_fixed_basis32_projection.ldf",
+      "bytes": 7755,
+      "mtime_ns": 1791708278852875700,
+      "sha256": "a366535a1c3c1db9e9431369a2e7f9e2c9f198cd483613bbaaf8e07a59a1854e"
+    },
+    "postprocess_py": {
+      "path": "D:\\Codex\\Kai\\stage227_228_postprocess.py",
+      "bytes": 17050,
+      "mtime_ns": 1791638063187182200,
+      "sha256": "6f835f86e389af41e7a39d48cdb0e0b270e0b4571442b7869bff9d62e9f69633"
+    }
+  }
+}

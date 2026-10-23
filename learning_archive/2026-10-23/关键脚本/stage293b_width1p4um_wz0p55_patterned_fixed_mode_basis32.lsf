@@ -1,0 +1,51 @@
+# Stage293b: build a fixed 32-mode basis from the final-geometry wz=0.55 um patterned result.
+# Analysis only; no FDTD run. The saved profiles will be reused for all projections.
+
+load("D:/FDTD_File/ar_incoupler_FDTD_stage292b_FINAL_GEOMETRY_WIDTH1P4UM_wx6um_wz0p55um_zdomain2p8um_PATTERNED_COMPLETE_638nm.fsp");
+select("mode_right");
+mode_update_status293b=updatemodes(1:32);
+
+mode_profiles293b=getresult("mode_right","mode profiles");
+neff_ds293b=getresult("mode_right","neff");
+neff293b=pinch(neff_ds293b.neff);
+te_ds293b=getresult("mode_right","TE polarization fraction");
+te293b=pinch(getattribute(te_ds293b,"TE polarization fraction"));
+loss_ds293b=getresult("mode_right","loss");
+loss293b=pinch(loss_ds293b.loss);
+
+ex293b=getresult("mode_right","expansion for right_field");
+a293b=pinch(ex293b.a);
+b293b=pinch(ex293b.b);
+N293b=pinch(ex293b.N);
+Tf293b=pinch(ex293b.T_forward);
+Tb293b=pinch(ex293b.T_backward);
+Tnet293b=pinch(ex293b.T_net);
+loaddata("D:/FDTD_File/stage281a_final_geometry_wz0p55_setup_audit.ldf");
+Psrc293b=Pimport_direct_W281a;
+nmodes293b=length(neff293b);
+
+guided_count293b=0;
+for(i293b=1:nmodes293b) {
+  if(real(neff293b(i293b))>1) { guided_count293b=guided_count293b+1; }
+}
+
+savedata("D:/FDTD_File/stage293b_width1p4um_wz0p55_patterned_fixed_mode_basis32.ldf",mode_update_status293b,mode_profiles293b,neff293b,te293b,loss293b,a293b,b293b,N293b,Tf293b,Tb293b,Tnet293b,Psrc293b,nmodes293b,guided_count293b);
+save("D:/FDTD_File/ar_incoupler_FDTD_stage293b_FINAL_GEOMETRY_WIDTH1P4UM_wz0p55um_zdomain2p8um_PATTERNED_FIXED_MODE_BASIS32_POSTRUN_638nm_COMPLETE.fsp");
+
+?"=== STAGE293B WIDTH1P4UM WZ0P55 FIXED MODE BASIS32 ===";
+?"mode_update_status="+num2str(mode_update_status293b)+", modes="+num2str(nmodes293b)+", guided_neff_gt_1="+num2str(guided_count293b);
+for(i293b=1:nmodes293b) {
+  ?"mode"+num2str(i293b)+" neff="+num2str(neff293b(i293b))+", TE_fraction="+num2str(te293b(i293b))+", loss="+num2str(loss293b(i293b))+", patterned_forward_percent="+num2str(real(Tf293b(i293b))*100);
+}
+
+
+
+
+
+
+
+
+
+
+
+

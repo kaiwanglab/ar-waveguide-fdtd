@@ -1,0 +1,43 @@
+{
+  "completed_at": "2026-10-13T02:08:00+08:00",
+  "geometry": {
+    "height_nm": 270,
+    "bottom_nm": -3.75,
+    "top_nm": 266.25,
+    "tooth_width_nm": 185,
+    "top_shift_nm": -240,
+    "grating_width_um": 0.75
+  },
+  "height_270nm": {
+    "nmodes252c": 32.0,
+    "guided_count252c": 28.0,
+    "PsrcP252c": 8.045297289070808e-15,
+    "PsrcR252c": 8.045297289070808e-15,
+    "a_linearity_error_max252c": 6.206335383118183e-17,
+    "b_linearity_error_max252c": 2.4841246232982515e-17,
+    "guided_scat_forward252c": 0.0485978742407529,
+    "guided_scat_backward252c": 2.8872634366659502e-06,
+    "guided_scat_net252c": 0.048594986977316235,
+    "tm_guided_scat_forward252c": 0.04841857240209686,
+    "te_guided_scat_forward252c": 0.00017658816979294222,
+    "mode1_scat_forward252c": 0.0330854641288981,
+    "mode1_fraction_guided_forward252c": 0.6808006450033878,
+    "scattered_direct_net252c": 0.048602147268306826,
+    "unexpanded_scattered_net252c": 2.6442687581992863e-06,
+    "eta_finite_beam_guided_net252c": 0.048594986977316235
+  },
+  "validation": {
+    "grid_y_max_error252a": 0.0,
+    "grid_z_max_error252a": 0.0,
+    "sourcepower_ratio252a": 1.0,
+    "reconstruction_relative_error252a": -1.4195539393209662e-16,
+    "reference_interp_minus_native_pp252a": 0.0
+  },
+  "height_280nm_reference": {
+    "guided_scat_net": 0.04018998951182352,
+    "mode1_scat_forward": 0.027438237734846892
+  },
+  "relative_net_change_vs_280nm": 0.2091316162951482,
+  "relative_mode1_change_vs_280nm": 0.2058159291651287,
+  "decision": "The trend remains monotonic toward smaller height. Validate 260 nm next."
+}

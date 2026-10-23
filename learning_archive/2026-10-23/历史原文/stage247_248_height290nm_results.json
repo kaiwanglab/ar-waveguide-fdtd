@@ -1,0 +1,27 @@
+{
+  "completed_at": "2026-10-12T22:39:56",
+  "height_290nm": {
+    "nmodes248c": 32.0,
+    "PsrcP248c": 8.045297289070808e-15,
+    "PsrcR248c": 8.045297289070808e-15,
+    "a_linearity_error_max248c": 1.2412670766236366e-16,
+    "b_linearity_error_max248c": 1.1636878843346593e-17,
+    "guided_count248c": 28.0,
+    "guided_scat_forward248c": 0.031086018918050778,
+    "guided_scat_backward248c": 1.7975244380641728e-06,
+    "guided_scat_net248c": 0.031084221393612714,
+    "tm_guided_scat_forward248c": 0.030917026826380974,
+    "te_guided_scat_forward248c": 0.00016592184607170206,
+    "mode1_scat_forward248c": 0.02120878631540832,
+    "mode1_fraction_guided_forward248c": 0.682261256139588,
+    "scattered_direct_net248c": 0.03108196700970027,
+    "unexpanded_scattered_net248c": -3.6606364748684173e-06,
+    "eta_finite_beam_guided_net248c": 0.031084221393612714
+  },
+  "height_300nm_reference": {
+    "guided_scat_net": 0.0219538694153944,
+    "mode1_scat_forward": 0.0149322779018856
+  },
+  "relative_net_change_vs_300nm": 0.4158880516896928,
+  "relative_mode1_change_vs_300nm": 0.42033161013766995
+}

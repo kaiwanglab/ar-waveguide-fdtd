@@ -1,0 +1,10 @@
+{
+  "stage": "281/282",
+  "date": "2026-10-15",
+  "geometry": {"period_nm": 328.75, "tooth_height_nm": 237, "tooth_width_nm": 190, "top_shift_nm": -290, "grating_z_span_um": 0.75, "wx_um": 6.0, "wz_um": 0.55},
+  "source": {"incident_power_W": 6.807557395418483e-15, "dataset_edge_field_ratio": 0.01831563888873418},
+  "validation": {"grid_y_max_error": 0.0, "grid_z_max_error": 0.0, "sourcepower_ratio": 1.0, "reconstruction_relative_error": 2.2008979174704117e-16, "reference_interp_minus_native_pp": 0.0, "nmodes": 32, "guided_count": 28, "a_linearity_error_max": 5.551115123125783e-17, "b_linearity_error_max": 3.4867510341210807e-17},
+  "results": {"guided_scat_forward": 0.07103736116786605, "guided_scat_backward": 4.118124458657831e-06, "guided_scat_net": 0.07103324304340738, "tm_guided_scat_forward": 0.07084709698143703, "te_guided_scat_forward": 0.0001876117966514614, "mode1_scat_forward": 0.04695634599123608, "mode1_fraction_guided_forward": 0.6610091537645253, "scattered_direct_net": 0.07103935068362063, "unexpanded_scattered_net": 5.135682860646362e-07, "absolute_guided_net_power_W": 4.835628790007065e-16},
+  "comparison_to_wz0p65": {"wz0p65_guided_net": 0.06477014886947098, "efficiency_absolute_gain_pp": 0.6263094173936403, "efficiency_relative_gain_percent": 9.669723295770405, "wz0p65_mode1": 0.04279420136018003, "mode1_relative_gain_percent": 9.725954682563431, "wz0p65_absolute_guided_net_power_W": 5.210951031122675e-16, "absolute_power_change_percent": -7.202567033809737},
+  "decision": "Keep wz=0.55 um as the temporary nominal illumination point. Validate the final geometry at wz=0.45 um before closing the three-point illumination gate."
+}

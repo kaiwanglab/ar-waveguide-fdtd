@@ -1,0 +1,52 @@
+{
+  "completed_at": "2026-10-12T20:58:17",
+  "height_300nm": {
+    "nmodes243c": 32.0,
+    "PsrcP243c": 8.045297289070808e-15,
+    "PsrcR243c": 8.045297289070808e-15,
+    "a_linearity_error_max243c": 7.850462293418876e-17,
+    "b_linearity_error_max243c": 3.1225775476680653e-17,
+    "guided_count243c": 28.0,
+    "guided_scat_forward243c": 0.02195514062319175,
+    "guided_scat_backward243c": 1.2712077973479993e-06,
+    "guided_scat_net243c": 0.0219538694153944,
+    "tm_guided_scat_forward243c": 0.021800544032519673,
+    "te_guided_scat_forward243c": 0.0001517095187613357,
+    "mode1_scat_forward243c": 0.01493227790188563,
+    "mode1_fraction_guided_forward243c": 0.680126725588462,
+    "scattered_direct_net243c": 0.021953568085669135,
+    "unexpanded_scattered_net243c": -1.9237893110340964e-06,
+    "eta_finite_beam_guided_net243c": 0.0219538694153944
+  },
+  "height_310nm_nominal": {
+    "guided_scat_net": 0.013081025977,
+    "mode1_scat_forward": 0.008854150199,
+    "mode1_fraction_guided_forward": 0.6768296866
+  },
+  "height_320nm": {
+    "nmodes245c": 32.0,
+    "PsrcP245c": 8.045297289070808e-15,
+    "PsrcR245c": 8.045297289070808e-15,
+    "a_linearity_error_max245c": 5.721958498152797e-17,
+    "b_linearity_error_max245c": 1.473916927697986e-17,
+    "guided_count245c": 28.0,
+    "guided_scat_forward245c": 0.006201162755045205,
+    "guided_scat_backward245c": 4.3306927617851777e-07,
+    "guided_scat_net245c": 0.006200729685769026,
+    "tm_guided_scat_forward245c": 0.006097530593891527,
+    "te_guided_scat_forward245c": 0.00010166901394239636,
+    "mode1_scat_forward245c": 0.004166106831267583,
+    "mode1_fraction_guided_forward245c": 0.6718267195741765,
+    "scattered_direct_net245c": 0.00620840367333958,
+    "unexpanded_scattered_net245c": 4.8891602765725045e-06,
+    "eta_finite_beam_guided_net245c": 0.006200729685769026
+  },
+  "summary": {
+    "height_300nm_relative_net_change": 0.6782987400220191,
+    "height_300nm_relative_mode1_change": 0.6864721702566217,
+    "height_320nm_relative_net_change": -0.5259752792577894,
+    "height_320nm_relative_mode1_change": -0.5294741180539146,
+    "net_tolerance_pass": false,
+    "mode1_tolerance_pass": false
+  }
+}

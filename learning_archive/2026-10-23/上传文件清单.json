@@ -1,0 +1,943 @@
+{
+  "date": "2026-10-23",
+  "scope": "学习资料与关键结果摘要；不含大型FSP或LDF",
+  "fileCountExcludingThisManifest": 187,
+  "files": [
+    {
+      "path": "AR波导完整学习复盘_详细版_2026-10-23.pptx",
+      "bytes": 1611501,
+      "sha256": "a73e2dbf751c0820eae7c183af9a23712233d0d03b4ba4ab8afb2167a71da220"
+    },
+    {
+      "path": "AR波导完整学习手册.docx",
+      "bytes": 228989,
+      "sha256": "b4f61e251d061b72042a53b0a279c50dde1e2f752ce43f361f480ae237a5d763"
+    },
+    {
+      "path": "figures/geometry.png",
+      "bytes": 56231,
+      "sha256": "21748ed19135d6c979a336506e854814d2a63595c1db8d1da4f6a6a641b068c3"
+    },
+    {
+      "path": "figures/illumination.png",
+      "bytes": 51650,
+      "sha256": "f4b884b6a1bc49cbe8ae8f9e22eb772e0794818e13ed2c9c5b0002f9cafef115"
+    },
+    {
+      "path": "figures/system.png",
+      "bytes": 60708,
+      "sha256": "bba593cc8043b6c2f2000f037a9414755492b1e6733783dbc708c86fb9a4b445"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4821,
+      "sha256": "7ae70a8a9c2535148bfca9e3dad62f7fda0989d0b9f234bafd6e4fdaf5814cee"
+    },
+    {
+      "path": "关键脚本/README.md",
+      "bytes": 996,
+      "sha256": "943154ec6647352020f9b1cabca23d00332bdb247a06f60953926612e961dd80"
+    },
+    {
+      "path": "关键脚本/stage292_293_finalize.py",
+      "bytes": 7862,
+      "sha256": "ecd518506b0900be1bf82510fbc825eb1b3d9d0bfc243c3e1a1b781888268abf"
+    },
+    {
+      "path": "关键脚本/stage292_298_finalize.py",
+      "bytes": 8051,
+      "sha256": "bec0d7aadce027467970466cfed07b7a293a642ad264745f95b968b9c4533453"
+    },
+    {
+      "path": "关键脚本/stage293a_width1p4um_wz0p55_coherent_field_decomposition.lsf",
+      "bytes": 3949,
+      "sha256": "051441805dba3ea8ab6b8c801e44796b9cc6a8a27ad4274eae6e7e1d63136436"
+    },
+    {
+      "path": "关键脚本/stage293b_width1p4um_wz0p55_patterned_fixed_mode_basis32.lsf",
+      "bytes": 2021,
+      "sha256": "3b07690608a2acb94eecab8a6c91bccac5d71ae02339edb205bfac8487e9b829"
+    },
+    {
+      "path": "关键脚本/stage293c_width1p4um_wz0p55_fixed_basis32_projection.lsf",
+      "bytes": 7535,
+      "sha256": "881342aaef7aab44a9b23a714820e5054ff592b87b562598f2a7e4eca1e3bb43"
+    },
+    {
+      "path": "历史原文/FDTD_learning_checkpoint_2026-09-01.md",
+      "bytes": 3376,
+      "sha256": "6263d20102bcf92f6e76430d2d6c8b128a96b2306d5ff76833b3ba96ec2deb02"
+    },
+    {
+      "path": "历史原文/FDTD__AR_Waveguide_Learning_Roadmap_20260817.md",
+      "bytes": 1710,
+      "sha256": "105bee2bfd2e9f4a4c4ab052d92dae27a2f4aa4bc2329280889358d7ac78c693"
+    },
+    {
+      "path": "历史原文/FDTD__AR_Waveguide_Recent_Learning_20260817.md",
+      "bytes": 1627,
+      "sha256": "3e59993c078de1bfca7edf321de441cc953acf6e2bae1e89373be04afdde353e"
+    },
+    {
+      "path": "历史原文/FDTD__learning_progress_20260818.md",
+      "bytes": 1395,
+      "sha256": "93fd935a2372c3114dd160f3276db07cc533872f22e42a8fec2e9acf45722acd"
+    },
+    {
+      "path": "历史原文/FDTD__RCWA_learning_checkpoint_2026-08-25.md",
+      "bytes": 3564,
+      "sha256": "cc319ff4eb34aaa22734037491dca96c0465b56140c72d18a45bc1cbfa602963"
+    },
+    {
+      "path": "历史原文/FDTD__RCWA_learning_checkpoint_2026-08-27.md",
+      "bytes": 3019,
+      "sha256": "c136377ca3e0c2611049031a7459d3c2f3adf7f185a116108d48e92f5f87de9f"
+    },
+    {
+      "path": "历史原文/FDTD__RCWA_learning_checkpoint_2026-08-31.md",
+      "bytes": 4182,
+      "sha256": "ad6979edd8cd8327f1971b17f87d2f826204d3404aff099cbd626fabfb9a54a4"
+    },
+    {
+      "path": "历史原文/FDTD__RCWA_learning_checkpoint_2026-09-01.md",
+      "bytes": 6305,
+      "sha256": "8ec79edcdb629451855b12210765156194404a1b29e1abafdb43725ab9093e5b"
+    },
+    {
+      "path": "历史原文/FDTD__RCWA_learning_log_2026-08-23.md",
+      "bytes": 5882,
+      "sha256": "61b217065402e5b4690ee149c820d2a127411db689a9be866e523b1705b159e8"
+    },
+    {
+      "path": "历史原文/FDTD__RCWA_learning_log_2026-08-23_before_2D_correction.md",
+      "bytes": 1805,
+      "sha256": "3eae6db04ca226beb93daf6fe50b23aa9bb85dacdfdd368f1578646dcdaff197"
+    },
+    {
+      "path": "历史原文/FDTD__RCWA_stage_checkpoint_2026-08-23.md",
+      "bytes": 5882,
+      "sha256": "61b217065402e5b4690ee149c820d2a127411db689a9be866e523b1705b159e8"
+    },
+    {
+      "path": "历史原文/learning_checkpoint_2026-09-03_FDTD_result_validation.md",
+      "bytes": 3420,
+      "sha256": "093b25430b833bab67fb0752a67a9cb6396790a0810b83a1e5edc6694d27fbdf"
+    },
+    {
+      "path": "历史原文/Lumerical_AR_waveguide_learning_summary_and_plan_2026-09-12.md",
+      "bytes": 18884,
+      "sha256": "4e834469f5707131f74b831a46b1d9367329c3bb6d9bf4adbc888cf71095b0e9"
+    },
+    {
+      "path": "历史原文/LUMERICAL_CHECKPOINT_STAGE175B_2026-09-29.md",
+      "bytes": 89749,
+      "sha256": "4f7f441be1eb9b1c68252178ac85d132535b149f91b25dd9381b9cacd181fef8"
+    },
+    {
+      "path": "历史原文/RCWA_learning_checkpoint_2026-08-25.md",
+      "bytes": 3564,
+      "sha256": "cc319ff4eb34aaa22734037491dca96c0465b56140c72d18a45bc1cbfa602963"
+    },
+    {
+      "path": "历史原文/RCWA_learning_checkpoint_2026-08-27.md",
+      "bytes": 3019,
+      "sha256": "c136377ca3e0c2611049031a7459d3c2f3adf7f185a116108d48e92f5f87de9f"
+    },
+    {
+      "path": "历史原文/RCWA_learning_checkpoint_2026-08-31.md",
+      "bytes": 4182,
+      "sha256": "ad6979edd8cd8327f1971b17f87d2f826204d3404aff099cbd626fabfb9a54a4"
+    },
+    {
+      "path": "历史原文/RCWA_stage_checkpoint_2026-08-23.md",
+      "bytes": 5882,
+      "sha256": "61b217065402e5b4690ee149c820d2a127411db689a9be866e523b1705b159e8"
+    },
+    {
+      "path": "历史原文/stage100_joint_optimum_final_mesh_validation_2026-09-24.md",
+      "bytes": 1661,
+      "sha256": "2581d5fc5c6557c6d002584fdbfc6e22f42f3e8c32b7d9ee7c6ad8f489101b6f"
+    },
+    {
+      "path": "历史原文/stage101_joint_optimum_duty_reoptimization_2026-09-24.md",
+      "bytes": 1940,
+      "sha256": "a1773a0f7ddb8946a927839b3157237a55c1a4e12fed91963cfcdb9a6918736e"
+    },
+    {
+      "path": "历史原文/stage102_duty_optimum_mesh_validation_2026-09-24.md",
+      "bytes": 1575,
+      "sha256": "a9f80e3a7e9d0a88ae00e5614584a74b5ea0ae281c36a6194b4f2a8e63616e35"
+    },
+    {
+      "path": "历史原文/stage103_local_tolerance_and_stop_rule_2026-09-24.md",
+      "bytes": 2049,
+      "sha256": "adccd933c0fa4155655d9eac549b9ed13d0a7e186b63d86c745d2241e7a69946"
+    },
+    {
+      "path": "历史原文/stage104_wavelength_bandwidth_validation_2026-09-24.md",
+      "bytes": 2032,
+      "sha256": "fca331695e5113eb24299dbf1ed55dd3f0e3d309e3987d6171844e49444bc5e7"
+    },
+    {
+      "path": "历史原文/stage105_angle_scan_diagnostic_2026-09-26.md",
+      "bytes": 3606,
+      "sha256": "ef6c0fe8bb0e0a8eff40b74705e1bb7bfa323e02f39aea0475124d3d938f79ea"
+    },
+    {
+      "path": "历史原文/stage105_to_stage112_phase_summary_2026-09-27.md",
+      "bytes": 4673,
+      "sha256": "273c2341c27e0f34e653a35139e80512a03033444f40b13705caac36f283735c"
+    },
+    {
+      "path": "历史原文/stage116_validation_checkpoint_2026-09-27.md",
+      "bytes": 2865,
+      "sha256": "3a7da4b65501a80798dfe66715c7636f46f5bb9291f19b5c3f9a38ed8789e9bd"
+    },
+    {
+      "path": "历史原文/stage117_angular_acceptance_checkpoint_2026-09-27.md",
+      "bytes": 2123,
+      "sha256": "60808fab2f6dddf65bad9f725f480d83076b77f6eea338d39b61d5f500f00ce9"
+    },
+    {
+      "path": "历史原文/stage118_spectral_bandwidth_checkpoint_2026-09-27.md",
+      "bytes": 2901,
+      "sha256": "e458dfcc10b6b19319a915848113a90754cbef78b68369b34ed116162c81f52b"
+    },
+    {
+      "path": "历史原文/stage119_period_tolerance_checkpoint_2026-09-27.md",
+      "bytes": 2489,
+      "sha256": "89e19974375ff0928bc85e2a3d02531c377e80e12afa50e79d1ccee286ebb04b"
+    },
+    {
+      "path": "历史原文/stage120_duty_cd_tolerance_checkpoint_2026-09-27.md",
+      "bytes": 2848,
+      "sha256": "2b0d87068a0d08617c446184984cc678ad15eca157c5f484c1a4603923af3a27"
+    },
+    {
+      "path": "历史原文/stage121_height_tolerance_checkpoint_2026-09-28.md",
+      "bytes": 2604,
+      "sha256": "a8e8f2f0f61999653292ddf618007aa9a431b38489cc12e271b18536eba1cb04"
+    },
+    {
+      "path": "历史原文/stage122_shift_sidewall_tolerance_checkpoint_2026-09-28.md",
+      "bytes": 2724,
+      "sha256": "572ffe6d990ca7aac93ccfaf67e3351a13a1cf1696be4a6fe839deae6dc44254"
+    },
+    {
+      "path": "历史原文/stage123_height_shift_joint_robustness_checkpoint_2026-09-28.md",
+      "bytes": 1961,
+      "sha256": "6a77e06b485071ddb77276b8e1e7bfe94bb50e440ffc4304cccb8a9e7f14fd22"
+    },
+    {
+      "path": "历史原文/stage124_robust_nominal_energy_validation_checkpoint_2026-09-28.md",
+      "bytes": 1994,
+      "sha256": "2eeb12133f765edb9971196c73bddec5cf925e95cec1d7308d45ea5c374934ac"
+    },
+    {
+      "path": "历史原文/stage125_126_angle_spectral_validation_checkpoint_2026-09-28.md",
+      "bytes": 2751,
+      "sha256": "f7688af4a4a0c3b4a9b4f397187564b08e00e6191ea0b7e3da9f5522ee37339f"
+    },
+    {
+      "path": "历史原文/stage127_recommended_tolerance_recheck_checkpoint_2026-09-28.md",
+      "bytes": 1964,
+      "sha256": "5c13610e62cfea740894450ff459b72a6a65506603a5ff096160249eae3c58fa"
+    },
+    {
+      "path": "历史原文/stage128_130_joint_tolerance_checkpoint_2026-09-28.md",
+      "bytes": 3060,
+      "sha256": "f77758477626b3dc19567cccd588e851e3530e9c0b623b76f53c04dbbf636c32"
+    },
+    {
+      "path": "历史原文/stage131_135_four_parameter_window_checkpoint_2026-09-28.md",
+      "bytes": 3246,
+      "sha256": "fc8a9994dcd5c989c30c02402d5bd1c80042516cd4a9d8475c7906214ff60103"
+    },
+    {
+      "path": "历史原文/stage136_monitor_plane_ratio_checkpoint_2026-09-28.md",
+      "bytes": 1930,
+      "sha256": "a3e8dbdda5c99c2d80abc0d8a3e16b52d7c4b4c7c49e4f1691e90f81810919a2"
+    },
+    {
+      "path": "历史原文/stage137_143_robust_center_adoption_checkpoint_2026-09-28.md",
+      "bytes": 3568,
+      "sha256": "3cb4bda77f5ceea23ccd2873fd63ef46cf84e6e4fdd91763f604a343da256c9e"
+    },
+    {
+      "path": "历史原文/stage192_final_validation_summary.md",
+      "bytes": 1535,
+      "sha256": "e5edb21f7ae534589aef1bd9ea1dc9807a8e796ae18ad56283fcbb2453f594b7"
+    },
+    {
+      "path": "历史原文/stage194_engineering_angle_validation_summary.md",
+      "bytes": 1139,
+      "sha256": "0e9fc3c5999ad2128aafa38adabcb6ecb3102e6a3cfb9cbe104d5c52329bc587"
+    },
+    {
+      "path": "历史原文/stage196_engineering_spectral_validation_summary.md",
+      "bytes": 1050,
+      "sha256": "fcf1ae5ee636e0a014ae9260bec569fc2e689ce50bd55c3841b2431b4bb8f87f"
+    },
+    {
+      "path": "历史原文/stage197_wavelength_angle_joint_summary.md",
+      "bytes": 963,
+      "sha256": "0e7557a696cfe42d3e95e9b8f12ccf445a33a29ec3d45ba044e94ae8df183db0"
+    },
+    {
+      "path": "历史原文/stage198_dispersion_peak_summary.md",
+      "bytes": 1139,
+      "sha256": "5b2e5093c607e8f25b2d0d97e6249b758fc992dd07c1fd7c951849c8c54939c6"
+    },
+    {
+      "path": "历史原文/stage199_phase_matching_verification.md",
+      "bytes": 2060,
+      "sha256": "d7d8c3b31f35e1f8fde069a15c08f9365ffadfa5f8c3de9822ffa351a4108c80"
+    },
+    {
+      "path": "历史原文/stage200_3d_resource_budget_and_gate.md",
+      "bytes": 3200,
+      "sha256": "7e881d2351ed08ba155a2c283c1fb8c6ec5fd2642181f6e75aa21b11e2dfcc92"
+    },
+    {
+      "path": "历史原文/stage201_2d_to_3d_source_mapping_summary.md",
+      "bytes": 2667,
+      "sha256": "f5edf24e218bca3ea6569d03df961be23356d8b3e49172853c3c12c4d29cb240"
+    },
+    {
+      "path": "历史原文/stage202_3d_periodic_bridge_convergence_summary.md",
+      "bytes": 1894,
+      "sha256": "e9ec2226e49169df344f2adf4d26f451ccf8064fc97b23645db6079dcdf28818"
+    },
+    {
+      "path": "历史原文/stage203a_2d_3d_sourcepower_xy_mesh_audit_summary.md",
+      "bytes": 2067,
+      "sha256": "8a51b2ba127574f1af2e80a13a1305593389b9f994336b0f815231373f539e99"
+    },
+    {
+      "path": "历史原文/stage203_3d_periodic_zcell_invariance_summary.md",
+      "bytes": 2264,
+      "sha256": "038c05471b6d23394d8b5349900c774e60a9dee006be9496bc0b8ac3fe8ff785"
+    },
+    {
+      "path": "历史原文/stage204_206_3d_periodic_mode_validation_summary.md",
+      "bytes": 2903,
+      "sha256": "510e55190e944b107ae76dfa0cfd38228a4fbfd9b0e75add43beaafb26271201"
+    },
+    {
+      "path": "历史原文/stage207_209_finite_width_background_validation_summary.md",
+      "bytes": 3688,
+      "sha256": "367ed6c4d4bf249289ef768352bf2afddb9d377b8c164df410bf94d69a6033fa"
+    },
+    {
+      "path": "历史原文/stage207_finite_width_power_diagnostic_summary.md",
+      "bytes": 2878,
+      "sha256": "766334be1a768ef5809323c976a8194f9c09f1e7d85f4616e31bad56655f3792"
+    },
+    {
+      "path": "历史原文/stage207_finite_width_resource_gate_summary.md",
+      "bytes": 1130,
+      "sha256": "28c67beb8c82e8cbc07637755f3f85e9970361a5462486851d5fd211a8dc944c"
+    },
+    {
+      "path": "历史原文/stage208_209_background_subtraction_method.md",
+      "bytes": 2081,
+      "sha256": "da14e80f5745d8bbf53419933e55f7618a309c72424657ec7895c4d5ff6afeb8"
+    },
+    {
+      "path": "历史原文/stage210_211_fixed_mode_validation_summary.md",
+      "bytes": 4040,
+      "sha256": "03c1c68ef5b1ac81848514de5cdb302867316ddec8e7f89423367e25bc0d0e70"
+    },
+    {
+      "path": "历史原文/stage212b_preliminary_direct_result.md",
+      "bytes": 1125,
+      "sha256": "3339a7987e0350e290e21d49043978191b65f06756b5749f7c28d6a5aff409ce"
+    },
+    {
+      "path": "历史原文/stage212_214_wide_domain_validation_summary.md",
+      "bytes": 1626,
+      "sha256": "92e871b0084f22a7483d7bcf5e1de6932ba0bf4b256862ce3b0651d4b7d1681e"
+    },
+    {
+      "path": "历史原文/stage219_221_method_transition_summary.md",
+      "bytes": 2013,
+      "sha256": "fb1facfd644c7c61a6f8f0c302fe1e15f3adcc29bd6c8e712bf437e5b0338059"
+    },
+    {
+      "path": "历史原文/stage221_224_finite_elliptical_gaussian_validation_summary.md",
+      "bytes": 1899,
+      "sha256": "749a8a7b03c12d600b4aeb2b7dfaef9e993acc5857ee41a8238497614a011d1e"
+    },
+    {
+      "path": "历史原文/stage221_226_finite_elliptical_gaussian_validation_summary.md",
+      "bytes": 4404,
+      "sha256": "41543e1825ed529fadc348a9e0dfd06d48390d1f9cc15b074a46e79e0ed0d028"
+    },
+    {
+      "path": "历史原文/stage225_226_pipeline_results.json",
+      "bytes": 5842,
+      "sha256": "ffd6f4dae7d6c60271bdc4945dadd536e81e838c706c7fff005f27329f26c62e"
+    },
+    {
+      "path": "历史原文/stage225_226_wz_sensitivity_gate.md",
+      "bytes": 3036,
+      "sha256": "5c2865c358046869cad433626ae41ff7ecb3ed20c814df4663e971b14a33ce74"
+    },
+    {
+      "path": "历史原文/stage227_228_pipeline_results.json",
+      "bytes": 6657,
+      "sha256": "43a4cd1bf90043fb00166b187add5a7f136dad9aa754713adc4cb368cf6503ed"
+    },
+    {
+      "path": "历史原文/STAGE229_ENGINEERING_ILLUMINATION_GATE_2026-10-11.md",
+      "bytes": 2802,
+      "sha256": "faa264970d85c580722e3fc64d896ba5bd288a827b002a4bb812ac7e6c930345"
+    },
+    {
+      "path": "历史原文/STAGE230_231_GRATING_WIDTH1P2UM_VALIDATION_2026-10-11.md",
+      "bytes": 2670,
+      "sha256": "1bd726b859dc5c8258d3c3d07da98ac9a83d44bbaa92e2d2e5bce8aac068db0b"
+    },
+    {
+      "path": "历史原文/STAGE232_233_WIDTH0P9UM_VALIDATION_2026-10-11.md",
+      "bytes": 2344,
+      "sha256": "085660d795db4458d397dad9cbd89c471e33a21ce34ee7960e7459e9ba75f64a"
+    },
+    {
+      "path": "历史原文/STAGE234_235_WIDTH0P8UM_VALIDATION_2026-10-11.md",
+      "bytes": 2154,
+      "sha256": "2d5a457cd6084854848f29b2bce5faf34bc81c5f84dc8546c6d54aa1d43bc637"
+    },
+    {
+      "path": "历史原文/STAGE236_237_WIDTH0P75UM_VALIDATION_2026-10-12.md",
+      "bytes": 1873,
+      "sha256": "dc603c192fcad0a2d3a2d693d0a8f53c5d26422a3f3d8a4d553dd47910b04328"
+    },
+    {
+      "path": "历史原文/STAGE238_239_WIDTH0P73UM_PEAK_CHECK_2026-10-12.md",
+      "bytes": 1833,
+      "sha256": "e44cbf3b44141c440c023a5d4beef61b3a377fc2fb0aac7f396cfbb86fbd399d"
+    },
+    {
+      "path": "历史原文/STAGE240_241_WIDTH_TOLERANCE_PLUS20NM_2026-10-12.md",
+      "bytes": 1856,
+      "sha256": "48a02ff661bd1b4211246a7a79b2ae17b4f80ffbd011d1f96e85a5bd08a71e77"
+    },
+    {
+      "path": "历史原文/stage242_245_height_tolerance_results.json",
+      "bytes": 2242,
+      "sha256": "ecf708e02ca9a56c4d5731edf5ef52c4748a9d48f9ad447a164503eeee6316c5"
+    },
+    {
+      "path": "历史原文/STAGE242_245_HEIGHT_TOLERANCE_VALIDATION_2026-10-12.md",
+      "bytes": 3112,
+      "sha256": "930c4add36aa5322d9a37cbbeaee0c6809cc3f049fbe661fd2d0c0b96ad59541"
+    },
+    {
+      "path": "历史原文/STAGE246_NEXT_ENGINEERING_VARIABLE_GATE_2026-10-12.md",
+      "bytes": 2012,
+      "sha256": "c1a180c630d8027641db50863c34f7e998512c8ced93a1ada1034dd661aeabef"
+    },
+    {
+      "path": "历史原文/stage247_248_height290nm_results.json",
+      "bytes": 1132,
+      "sha256": "9cc80d02fd77f944983f1516c7103df4e59ac289edd0daf923e4a806f5e7e4f8"
+    },
+    {
+      "path": "历史原文/STAGE247_248_HEIGHT290NM_VALIDATION_2026-10-12.md",
+      "bytes": 2338,
+      "sha256": "9a7f53a907055f034f4198adda21fd1ca7f141d5c018bf3559ac3732307b9762"
+    },
+    {
+      "path": "历史原文/stage249_250_height280nm_results.json",
+      "bytes": 1121,
+      "sha256": "27f5a28ea024a77dd6cdaff8e1466dc1dd356a94ea321d33fa3546604ca0b258"
+    },
+    {
+      "path": "历史原文/STAGE249_250_HEIGHT280NM_VALIDATION_2026-10-13.md",
+      "bytes": 2949,
+      "sha256": "80116bf89aaa8d7abb8957e1dfe6d8c5fb36bdaf75084bf739dc2544a2080b46"
+    },
+    {
+      "path": "历史原文/stage251_252_height270nm_results.json",
+      "bytes": 1609,
+      "sha256": "f14719417f30ff731c0ec61364ae46a72e709826c08df0c829021b25b47e4458"
+    },
+    {
+      "path": "历史原文/STAGE251_252_HEIGHT270NM_VALIDATION_2026-10-13.md",
+      "bytes": 2554,
+      "sha256": "1cad37d63187eec8d1a0f70dbb77cd8dac17973d62e6b883ff155a61db65d512"
+    },
+    {
+      "path": "历史原文/stage253_254_height260nm_results.json",
+      "bytes": 1591,
+      "sha256": "6d3181dca1ebcf38a04420ef890679f793f3d14a84b7772a2dcb7fb28d99b1db"
+    },
+    {
+      "path": "历史原文/STAGE253_254_HEIGHT260NM_VALIDATION_2026-10-13.md",
+      "bytes": 1974,
+      "sha256": "ba6385ee5b0f4bb169c7c89377af8b3cd5fce498ad9eb5ec5606fd105f347882"
+    },
+    {
+      "path": "历史原文/stage255_256_height250nm_results.json",
+      "bytes": 1618,
+      "sha256": "81a6a61195d48b1002b7a2e4374f0cc84ff45bd5497cede106a3f1bddb1217e0"
+    },
+    {
+      "path": "历史原文/STAGE255_256_HEIGHT250NM_VALIDATION_2026-10-13.md",
+      "bytes": 1605,
+      "sha256": "08e9cfc8de807b65bec8a091ffe9c24df59e59fe713a36ebc4fabbf51db9599c"
+    },
+    {
+      "path": "历史原文/stage257_258_height240nm_results.json",
+      "bytes": 1627,
+      "sha256": "7919e91c5e66d7c184aa21df4ed18159ccc9bf3ae1735866ff9a153deca0eb93"
+    },
+    {
+      "path": "历史原文/STAGE257_258_HEIGHT240NM_VALIDATION_2026-10-13.md",
+      "bytes": 1668,
+      "sha256": "94db111d55cdbb40efe3309035bb3f525fe8779e96d2cf8d11ddbef38025fd46"
+    },
+    {
+      "path": "历史原文/stage259_260_height230nm_results.json",
+      "bytes": 978,
+      "sha256": "34b78dcd94e052130b54a776cfaf2a1f2906298d2abb2a06973ef2fb1c23922a"
+    },
+    {
+      "path": "历史原文/STAGE259_260_HEIGHT230NM_VALIDATION_2026-10-13.md",
+      "bytes": 1417,
+      "sha256": "f8e20285a065f04c80805763237e01930bfa2e67ef8b7da598332fe5dd2fe57c"
+    },
+    {
+      "path": "历史原文/stage261_262_height237nm_results.json",
+      "bytes": 1084,
+      "sha256": "ff9b3b71ea42c1269b4f8c680df7b4ac685ced27250723f8da733d811aad2ca2"
+    },
+    {
+      "path": "历史原文/STAGE261_262_HEIGHT237NM_VALIDATION_2026-10-13.md",
+      "bytes": 1703,
+      "sha256": "80668d796da73929fb6263f6266b38320207e1e88cb3d9caec3ad027d26b978d"
+    },
+    {
+      "path": "历史原文/STAGE263_264_HEIGHT237NM_TOOTH180NM_INTERACTION_2026-10-14.md",
+      "bytes": 852,
+      "sha256": "4a4901895179e88bf6509f5376015f66b331a31e1bc7c2f8972897d52f58bbb6"
+    },
+    {
+      "path": "历史原文/stage263_264_height237nm_tooth180nm_results.json",
+      "bytes": 1174,
+      "sha256": "84e8be5772e82a8890920b7fb15afe4a56ca1e151cae82cd8f39897b98abd612"
+    },
+    {
+      "path": "历史原文/STAGE265_266_HEIGHT237NM_TOOTH190NM_INTERACTION_2026-10-14.md",
+      "bytes": 2139,
+      "sha256": "5aacb7533100579a1489ea5452b819c5bf35eaf22d0c557e79bc477ad9cc55d9"
+    },
+    {
+      "path": "历史原文/stage265_266_height237nm_tooth190nm_results.json",
+      "bytes": 1553,
+      "sha256": "c5fdaf7a7a7859ff955d1892417b0768cdb94db05f050b3b734fcde972803022"
+    },
+    {
+      "path": "历史原文/stage267_268_topshiftm250nm_results.json",
+      "bytes": 1518,
+      "sha256": "50f67507e81b24c4b93ee960b4daa65e9ebe289a8287e1587de27e25f54729cd"
+    },
+    {
+      "path": "历史原文/STAGE267_268_TOPSHIFT_M250NM_VALIDATION_2026-10-14.md",
+      "bytes": 2591,
+      "sha256": "a71abbdf442c1bf1b38d75a42cbf0775bbaf86a4e6e57c48b4825c3f9ba53014"
+    },
+    {
+      "path": "历史原文/STAGE267_280_TOPSHIFT_OPTIMIZATION_AND_TOLERANCE_SUMMARY_2026-10-15.md",
+      "bytes": 1521,
+      "sha256": "6c3b9eeeb269e45cf8efe9f15a060ec43fea4782fb4ee1c2f4b842f9c5f2a9ea"
+    },
+    {
+      "path": "历史原文/stage271_272_topshiftm260nm_results.json",
+      "bytes": 1485,
+      "sha256": "74a4a730684c3cda6956142a44d0aa9d820fd1b9b23721f3b569d3de7f0fd160"
+    },
+    {
+      "path": "历史原文/STAGE271_272_TOPSHIFT_M260NM_VALIDATION_2026-10-14.md",
+      "bytes": 2031,
+      "sha256": "d50e82cc619c154147c3b53fe36b42f21cac2ef035754232c682045fead0f255"
+    },
+    {
+      "path": "历史原文/stage273_274_topshiftm270nm_results.json",
+      "bytes": 1505,
+      "sha256": "3876e279167b8735584c4b49b5d288224b8b623de400ffeb3ae3a52d651435a8"
+    },
+    {
+      "path": "历史原文/STAGE273_274_TOPSHIFT_M270NM_VALIDATION_2026-10-14.md",
+      "bytes": 1915,
+      "sha256": "824312c12714fd49b7fde4f53afc41d89cba148183c4a965bbadff5fd0d17c6a"
+    },
+    {
+      "path": "历史原文/stage275_276_topshiftm280nm_results.json",
+      "bytes": 1502,
+      "sha256": "86c9303c4c89b20d791d6636bebebcf3305221600a9f7dcf270a11f09359e668"
+    },
+    {
+      "path": "历史原文/STAGE275_276_TOPSHIFT_M280NM_VALIDATION_2026-10-15.md",
+      "bytes": 1934,
+      "sha256": "dc2a8efa67063d693783523851ee52f7039c090a19b6eb763dec951959791b55"
+    },
+    {
+      "path": "历史原文/stage277_278_topshiftm290nm_results.json",
+      "bytes": 1429,
+      "sha256": "172c5a3425b8278d93734a718f7aeedf9fea496848fed0f427688be51e2d4740"
+    },
+    {
+      "path": "历史原文/STAGE277_278_TOPSHIFT_M290NM_VALIDATION_2026-10-15.md",
+      "bytes": 1563,
+      "sha256": "9eab07a4db3f7f6dbc353640b209fc92ae9b9e3d2a25f177d2f58c31eef414bb"
+    },
+    {
+      "path": "历史原文/stage279_280_topshiftm300nm_results.json",
+      "bytes": 1675,
+      "sha256": "12b8e2531f924f230e48d3e66c4bcea78d263ea6d4c6f8f1ad417a443a20a86d"
+    },
+    {
+      "path": "历史原文/STAGE279_280_TOPSHIFT_M300NM_AND_FINAL_DECISION_2026-10-15.md",
+      "bytes": 2264,
+      "sha256": "705f7a41c03c204d9813c944660fd132facf2358e6866aa1a12daebbc281ad7e"
+    },
+    {
+      "path": "历史原文/stage281_282_final_geometry_wz0p55_results.json",
+      "bytes": 1675,
+      "sha256": "7d329861e5304b53ccb24113663a7e9ae034e047230b2e79c305a100c6bf4410"
+    },
+    {
+      "path": "历史原文/STAGE281_282_FINAL_GEOMETRY_WZ0P55_VALIDATION_2026-10-15.md",
+      "bytes": 2405,
+      "sha256": "1ff76892f2fc36223f905ae160d05d9782b26f94e4c2e14e0f0dcd9bf115f64c"
+    },
+    {
+      "path": "历史原文/STAGE283_284_FINAL_GEOMETRY_WZ0P45_AND_THREE_POINT_ILLUMINATION_GATE_2026-10-15.md",
+      "bytes": 3428,
+      "sha256": "891fa51d3bb1d8e0cc44fc36ef2b7419a976278168930e35b23e39bf6f58f368"
+    },
+    {
+      "path": "历史原文/stage283_284_final_geometry_wz0p45_three_point_results.json",
+      "bytes": 3745,
+      "sha256": "f07c77025d55f07655aa5c6505be4de7cc1dad4e6b5f8101f675b191ff694262"
+    },
+    {
+      "path": "历史原文/STAGE283_284_PRECOMPUTE_AUDIT_2026-10-15.md",
+      "bytes": 1661,
+      "sha256": "de330e7de0ddb89f13e9b77a91282fc301b808c05aab24b21cb5518d70afa186"
+    },
+    {
+      "path": "历史原文/STAGE283_RUNNING_CHECKPOINT_2026-10-15.md",
+      "bytes": 1337,
+      "sha256": "f6fa4346c56b055a037c1ad6d6e75d3af8c451e688f5ca2aaeb042951f579f36"
+    },
+    {
+      "path": "历史原文/stage284a_wz0p45_scalars.json",
+      "bytes": 356,
+      "sha256": "dc1abd979396701f98c691e8f122113650084854c9ca03f3f3e3f8ab4619ca50"
+    },
+    {
+      "path": "历史原文/stage284c_wz0p45_scalars.json",
+      "bytes": 789,
+      "sha256": "8fbbfc1459df0c9180f2a1a5707471757e3ec2cc6a08ac73d21c7f398cad9e67"
+    },
+    {
+      "path": "历史原文/stage285_286_width1p5um_wz0p55_nominal_results.json",
+      "bytes": 2631,
+      "sha256": "424d7a61c32d8564458879b20bc53554ef1674b87d75b510d8750fd15e81434d"
+    },
+    {
+      "path": "历史原文/STAGE285_286_WIDTH1P5UM_WZ0P55_NOMINAL_SCREEN_2026-10-15.md",
+      "bytes": 1626,
+      "sha256": "64de393894ff52531dd02e14c8dbc9415ae08582d0709f45a2ade1df2c5ef965"
+    },
+    {
+      "path": "历史原文/STAGE285_POST_ILLUMINATION_GATE_DECISION_TREE_2026-10-15.md",
+      "bytes": 3605,
+      "sha256": "b3c70fd72f85c1b6900cfd75cfc91523ddc818812d525baec6e98dbe86ac5aac"
+    },
+    {
+      "path": "历史原文/stage286a_width1p5um_wz0p55_scalars.json",
+      "bytes": 337,
+      "sha256": "ef34c3cb674c32d42a9321e8f2fce295252b2e6fec589f789320e44b98c9449f"
+    },
+    {
+      "path": "历史原文/stage286c_width1p5um_wz0p55_scalars.json",
+      "bytes": 788,
+      "sha256": "76a250fc6d7adc99e6e6887cf9999a85126b5cb129ed0b6f86045f86425f4fd6"
+    },
+    {
+      "path": "历史原文/STAGE287_291_LEARNING_NOTE.md",
+      "bytes": 2033,
+      "sha256": "104df613138a40121539b5eb256305232b1bbc5234233c6d1ee916eb016c8b87"
+    },
+    {
+      "path": "历史原文/STAGE287_291_WIDTH1P5UM_THREE_POINT_ILLUMINATION_VALIDATION.md",
+      "bytes": 1044,
+      "sha256": "1c9f6b2c3b4e3ed2d995e1b53e35d8858a6088756895e460942abba0cd5c37e0"
+    },
+    {
+      "path": "历史原文/stage287_291_width1p5um_three_point_results.json",
+      "bytes": 4058,
+      "sha256": "7cd2f35f5c54e55e4dd1b3696d0eab58e813759321f295e405b9616f94c04bcd"
+    },
+    {
+      "path": "历史原文/stage288a_width1p5um_wz0p45_scalars.json",
+      "bytes": 339,
+      "sha256": "73697cc4dae243dcf6a4400d6257e43482a2e7372264315b3943a989382f2b9b"
+    },
+    {
+      "path": "历史原文/stage288c_width1p5um_wz0p45_scalars.json",
+      "bytes": 787,
+      "sha256": "a6ca9164b21e7dc141321ee253e9fd03de05855a73b7f9c9ed581139be8d6b24"
+    },
+    {
+      "path": "历史原文/stage290a_width1p5um_wz0p65_scalars.json",
+      "bytes": 358,
+      "sha256": "feddfa480d2ee492fd1252c0af154212911b7deb0e71ddd31ebf29a5447864a8"
+    },
+    {
+      "path": "历史原文/stage290c_width1p5um_wz0p65_scalars.json",
+      "bytes": 790,
+      "sha256": "32444b6dbde1f33d05f203a286ee8dac5814cef2e7d793e95edcb5df8ab99fe6"
+    },
+    {
+      "path": "历史原文/stage292_293_width1p4um_wz0p55_nominal_results.json",
+      "bytes": 2630,
+      "sha256": "67513de1a20e7e0fb39fb30449a344d5191bf82ce28ba4fd072412c9a224fd9f"
+    },
+    {
+      "path": "历史原文/STAGE292_293_WIDTH1P4UM_WZ0P55_NOMINAL_SCREEN_2026-10-17.md",
+      "bytes": 1628,
+      "sha256": "5a80a6898e7010e2f0f57230fac0032b726782cfb932d0e4a20b89ae03dfb60a"
+    },
+    {
+      "path": "历史原文/STAGE292_298_WIDTH1P4UM_THREE_POINT_ILLUMINATION_VALIDATION.md",
+      "bytes": 1044,
+      "sha256": "5b47129d64ead710ea4513cdf345740da72f1ea5c5e6f6e94167155b63259201"
+    },
+    {
+      "path": "历史原文/stage292_298_width1p4um_three_point_results.json",
+      "bytes": 4033,
+      "sha256": "27ccb22b246d565d5533dbf7a6bf8eb2e4372a453b48674ea658746c7b13c304"
+    },
+    {
+      "path": "历史原文/STAGE292_ENGINEERING_VALIDATION_DECISION_TREE.md",
+      "bytes": 2115,
+      "sha256": "628a542b8e7a66e3a2e6622c5f0d9b46f3de444f6b3a0cde8992fca4c070c8f9"
+    },
+    {
+      "path": "历史原文/STAGE292_REAL_OPTICAL_INPUT_SPEC_TEMPLATE.md",
+      "bytes": 3188,
+      "sha256": "289b974f0f040cf9b6d8405e40bbc8f7933e5f1053ad9ca5870b8317cab89b3a"
+    },
+    {
+      "path": "历史原文/stage293a_width1p4um_wz0p55_scalars.json",
+      "bytes": 340,
+      "sha256": "b296be964a510a95e6c62aff8c235e0c792bf2df7c82f919026902c37905ed0c"
+    },
+    {
+      "path": "历史原文/stage293c_width1p4um_wz0p55_scalars.json",
+      "bytes": 788,
+      "sha256": "b744dfaf8c7a30d05ecacbcb8ba69c244a042e77580e8f802bffaefa51319a89"
+    },
+    {
+      "path": "历史原文/stage295a_width1p4um_wz0p45_scalars.json",
+      "bytes": 339,
+      "sha256": "8f3dfdfc671f6dfde5709256e30aef7092ec5c012f2ac76457c642aa530e90b6"
+    },
+    {
+      "path": "历史原文/stage295c_width1p4um_wz0p45_scalars.json",
+      "bytes": 786,
+      "sha256": "8470a225745a023305c0938a2fd88fdc9d8e3cdc49f75122f3159f7b8376f3c0"
+    },
+    {
+      "path": "历史原文/stage297a_width1p4um_wz0p65_scalars.json",
+      "bytes": 340,
+      "sha256": "6f1b55a4f085dd5ef05649d967b2378de3cca02af72c1da2e7f77acb96cc6cca"
+    },
+    {
+      "path": "历史原文/stage297c_width1p4um_wz0p65_scalars.json",
+      "bytes": 787,
+      "sha256": "48100c15112c27b686f7f9aab783cce2428054ff8eab1e633624e4fd8e8f5e51"
+    },
+    {
+      "path": "历史原文/stage69_joint_tolerance_analysis_2026-09-23.md",
+      "bytes": 2562,
+      "sha256": "0bcd9f0b95eef731fb2d9a1bd53df2ddf0a2d4e1a3cfcfc8a1637295b148a2ef"
+    },
+    {
+      "path": "历史原文/stage70_reduced_joint_tolerance_analysis_2026-09-23.md",
+      "bytes": 2283,
+      "sha256": "b5c1483918ec0fc62bc6b5b7aca5248c8236dc0d817b7fe039c41b5a4220d41a"
+    },
+    {
+      "path": "历史原文/stage71_final_candidate_joint_tolerance_analysis_2026-09-23.md",
+      "bytes": 1974,
+      "sha256": "df8706ce034368dc32f38e506d1f1697d1404a8de45498455d4f9b81dbc20a56"
+    },
+    {
+      "path": "历史原文/stage72_accuracy4_three_point_verification_2026-09-23.md",
+      "bytes": 2083,
+      "sha256": "d0503b7878f5d14a58711075c63708584a69b28003954e4804dc4ea52ab0c369"
+    },
+    {
+      "path": "历史原文/stage73_angle_robustness_coarse_analysis_2026-09-23.md",
+      "bytes": 2501,
+      "sha256": "aa6108b6522ab18f7872ddfadc91d0fe9668d761b0642d17678a87ef77693153"
+    },
+    {
+      "path": "历史原文/stage74_to_stage76_angle_bandwidth_verification_2026-09-23.md",
+      "bytes": 3345,
+      "sha256": "9435b6d5a2dcaab9da11f7e1813ff867978624fab191ceaf59d1b3ed819f28ef"
+    },
+    {
+      "path": "历史原文/stage77_wavelength_angle_joint_map_analysis_2026-09-23.md",
+      "bytes": 2867,
+      "sha256": "e371e185b09f6404d6231f7e7700038898ace649f36088bf9ad3787595849f79"
+    },
+    {
+      "path": "历史原文/stage78_to_stage79_dispersion_peak_verification_2026-09-23.md",
+      "bytes": 3099,
+      "sha256": "7b6f47667a836ad2c2d4dee9a4aabe21da26a1bc6b33c4e6d5dc3f55f01ba003"
+    },
+    {
+      "path": "历史原文/stage80_phase_matching_neff_from_dispersion_2026-09-23.md",
+      "bytes": 3343,
+      "sha256": "bd536ad194f706a64ddd7c98b3bc1c34e1db92e1f3c2bafca06f58327e9ce516"
+    },
+    {
+      "path": "历史原文/stage81_to_stage83_bloch_dispersion_checkpoint_2026-09-23.md",
+      "bytes": 2327,
+      "sha256": "a61a627ee07067ae69428e45830ba1ca030eae462805d1591032064058341ca4"
+    },
+    {
+      "path": "历史原文/stage84_resonant_field_validation_2026-09-23.md",
+      "bytes": 1847,
+      "sha256": "0a9b6c1ed9e90f1c0bdde79cc3d9329bca2ec69f79bb80c0f323c7200bbbb0e0"
+    },
+    {
+      "path": "历史原文/stage85_bloch_to_finite_grating_angle_closure_2026-09-23.md",
+      "bytes": 989,
+      "sha256": "dffe4dec3b237f6aa639a4c124aa41bbb0f909fd65d55dedd143d685b435f478"
+    },
+    {
+      "path": "历史原文/stage86_bloch_mesh_convergence_2026-09-23.md",
+      "bytes": 1557,
+      "sha256": "311ceca5fafe64d9805124f2489141538110dbcac68be01faf7b9ef3bb1c060b"
+    },
+    {
+      "path": "历史原文/stage87_bloch_time_convergence_2026-09-23.md",
+      "bytes": 1448,
+      "sha256": "6caae1d251e78805fca0482c8d38ba1282ad3561428d1756912403ce3d982869"
+    },
+    {
+      "path": "历史原文/stage88_monitor_position_robustness_2026-09-23.md",
+      "bytes": 1445,
+      "sha256": "8ee071819056e25fd4dd5d430efc788fdbcf3fa479a540c6c42d68cfde0bbd63"
+    },
+    {
+      "path": "历史原文/stage89_dipole_position_robustness_2026-09-23.md",
+      "bytes": 1480,
+      "sha256": "f91d17849555545abf21388d958bf73ee3cc384706d83b6eda282ca2e880c7c0"
+    },
+    {
+      "path": "历史原文/stage90_bloch_validation_final_summary_2026-09-23.md",
+      "bytes": 3255,
+      "sha256": "331b1d0849e13e457f4aeaf3b29821d44aca5f83823257d4e14ec83f213588d4"
+    },
+    {
+      "path": "历史原文/stage91_finite_grating_power_budget_2026-09-23.md",
+      "bytes": 2559,
+      "sha256": "6c091f56e98f526347dee09615be0b17e5870684bec1b4eae2d8bc6498ed05b6"
+    },
+    {
+      "path": "历史原文/stage92_substrate_depth_validation_2026-09-23.md",
+      "bytes": 2182,
+      "sha256": "e0691a524fe1b94c4bd7067304f1183a7670b2736cc183f222d5ae619d9f3033"
+    },
+    {
+      "path": "历史原文/stage93_slanted_grating_directionality_2026-09-23.md",
+      "bytes": 2490,
+      "sha256": "ab478cfc22c1b19966937c77be212e34b74d11a409863a7bdd7004bbae01872c"
+    },
+    {
+      "path": "历史原文/stage94_slant_shift_scan_2026-09-24.md",
+      "bytes": 2308,
+      "sha256": "40856ea438e8531f9f95a267f276c0b27a784478591e9fb833b50894870be2be"
+    },
+    {
+      "path": "历史原文/stage95_slanted_grating_mesh_convergence_2026-09-24.md",
+      "bytes": 1743,
+      "sha256": "6a0860efae585564ce4c44fb7221c5f8d1f69cb842e8ae7fd76aad1b79db8584"
+    },
+    {
+      "path": "历史原文/stage96_slanted_grating_height_tolerance_2026-09-24.md",
+      "bytes": 1898,
+      "sha256": "f1302854d2a7e987805ff4882edaef835f37c66111fbfec1450b11457b2a5754"
+    },
+    {
+      "path": "历史原文/stage97_slanted_grating_height_reoptimization_2026-09-24.md",
+      "bytes": 2062,
+      "sha256": "c029af892b17ca2565153c07882c811eeb213dd44b7327e467f97fb6827217ca"
+    },
+    {
+      "path": "历史原文/stage98_joint_optimum_mesh_validation_2026-09-24.md",
+      "bytes": 1535,
+      "sha256": "4e8c56161d5cd4d5d99b6b9963fee2009b554ff26632af56040cd4c941cf58b4"
+    },
+    {
+      "path": "历史原文/stage99_height280_shift_reoptimization_2026-09-24.md",
+      "bytes": 1786,
+      "sha256": "dbce72b1bbe9ff7bee32d6ae7af61e69276221d413fbace5ec37ebab8eda4cb4"
+    },
+    {
+      "path": "历史记录索引.md",
+      "bytes": 19516,
+      "sha256": "229dc55e770b2ce15c1d6bbb049fada1e09741fea49b0934294f9de800f199be"
+    },
+    {
+      "path": "只读源检查.lsf",
+      "bytes": 629,
+      "sha256": "4c6aff66b34d182df974654f4c7ea776b74c435d7a4e831012078243085646d1"
+    },
+    {
+      "path": "学习导航.html",
+      "bytes": 1461648,
+      "sha256": "8e786074ba55bc6cdbe11ed0e6c421ad314c055886f46275e847ced61335bf44"
+    },
+    {
+      "path": "学习手册.md",
+      "bytes": 51415,
+      "sha256": "53597a6ed04525a09ba170ca9d7d4acd8246112308980d096403a1d223d2db95"
+    },
+    {
+      "path": "学习重启检查点_2026-10-23.md",
+      "bytes": 2195,
+      "sha256": "40c3107c742b86546896cabda2add1591726439efa0f5bf476c8090ca9fcc4d8"
+    },
+    {
+      "path": "我的实验记录.md",
+      "bytes": 1040,
+      "sha256": "9ea2c0cf3f354903a4f6e1cecafe33163baeb2bd74d102e4e0942e091a2f3e7d"
+    },
+    {
+      "path": "文件清单.json",
+      "bytes": 1093437,
+      "sha256": "583435c66833263e249177798bc606cdaebc110ffcaff5de019b3ab2f4461adc"
+    },
+    {
+      "path": "阶段文件索引.md",
+      "bytes": 502871,
+      "sha256": "21edadaf3dce492503cf929491256cf296afa9723d2e801d86016ae8b7c23004"
+    },
+    {
+      "path": "AR波导完整学习资料包_含PPT_2026-10-23.zip",
+      "bytes": 2669988,
+      "sha256": "dcb30cd75b18f30c554b94385c1054f20c704040e8cb775783a35574ee889420"
+    }
+  ],
+  "note": "此清单用于仓库目录；ZIP内清单用于ZIP内文件，不包含ZIP自身。"
+}

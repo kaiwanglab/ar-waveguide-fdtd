@@ -1,0 +1,10 @@
+{
+  "stage": "279/280",
+  "date": "2026-10-15",
+  "geometry": {"wavelength_nm": 638, "height_nm": 237, "tooth_width_nm": 190, "top_shift_nm": -300, "grating_z_span_um": 0.75},
+  "validation": {"audit_pass": 1, "grid_y_max_error": 0.0, "grid_z_max_error": 0.0, "sourcepower_ratio": 1.0, "reconstruction_relative_error": 0.0, "nmodes": 32, "guided_count": 28, "a_linearity_error_max": 5.551115123125783e-17, "b_linearity_error_max": 1.7770758248667666e-16},
+  "results": {"guided_scat_forward": 0.06474181707074272, "guided_scat_backward": 3.74582671051997e-06, "guided_scat_net": 0.0647380712440322, "tm_guided_scat_forward": 0.0645806325889556, "te_guided_scat_forward": 0.00015891911484877466, "mode1_scat_forward": 0.04267286330012412, "mode1_fraction_guided_forward": 0.6591236581064124, "scattered_direct_net": 0.06474023416255008, "unexpanded_scattered_net": -2.622598781865104e-06, "eta_finite_beam_guided_net": 0.0647380712440322},
+  "comparison_to_top_shift_m290": {"baseline_guided_net": 0.06477014886947098, "absolute_gain": -0.00003207762543877557, "relative_gain_percent": -0.049525323005539246, "baseline_mode1": 0.04279420136018003, "mode1_absolute_gain": -0.00012133806005591025, "mode1_relative_gain_percent": -0.28353855475572454},
+  "final_local_fit": {"total_power_vertex_top_shift_nm": -293.03008788520935, "total_power_vertex_guided_net": 0.06477762429318784, "mode1_vertex_top_shift_nm": -283.7526412960199, "mode1_vertex_power": 0.04281329971541013, "engineering_total_power_choice_nm": -290, "engineering_mode1_choice_nm": -280},
+  "decision": "Stop top-shift refinement. Freeze -290 nm for total guided net, or -280 nm when mode1 is the priority."
+}

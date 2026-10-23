@@ -1,0 +1,43 @@
+{
+  "stage": "265/266",
+  "date": "2026-10-14",
+  "geometry": {
+    "period_nm": 328.75,
+    "tooth_height_nm": 237.0,
+    "tooth_width_nm": 190.0,
+    "top_shift_nm": -240.0,
+    "grating_z_span_um": 0.75,
+    "gaussian_wx_um": 6.0,
+    "gaussian_wz_um": 0.65,
+    "fdtd_z_domain_um": 2.8
+  },
+  "results": {
+    "guided_forward": 0.0630033734916806,
+    "guided_backward": 0.000003566623351015705,
+    "guided_net": 0.06299980686832958,
+    "tm_guided_forward": 0.06285729501855643,
+    "te_guided_forward": 0.00014394021976979753,
+    "mode1_forward": 0.04206952634430317,
+    "mode1_fraction_guided_forward": 0.6677345039287194,
+    "scattered_direct_net": 0.06301041778933701,
+    "unexpanded_scattered_net": 0.000006252833173819861
+  },
+  "numerical_validation": {
+    "source_power_ratio": 1.0,
+    "grid_y_max_error_m": 0.0,
+    "grid_z_max_error_m": 0.0,
+    "coherent_reconstruction_relative_error": 4.2004818998668267e-16,
+    "a_linearity_error_max": 1.1102230246251565e-16,
+    "b_linearity_error_max": 9.050640239131204e-17,
+    "mode_count": 32,
+    "guided_mode_count": 28
+  },
+  "local_width_fit": {
+    "sample_width_nm": [180.0, 185.0, 190.0],
+    "sample_guided_net": [0.06243323786927269, 0.0628736080381282, 0.06299980686832958],
+    "quadratic_vertex_width_nm": 189.508439578575,
+    "quadratic_vertex_guided_net": 0.0630013251430953,
+    "predicted_relative_gain_vs_190_percent": 0.00240996733351651,
+    "decision": "Freeze tooth width at 190 nm; further sub-nanometer refinement is below the engineering stop threshold."
+  }
+}

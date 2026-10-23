@@ -1,0 +1,86 @@
+# Stage293a: coherent patterned/reference field decomposition for width=1.40 um, wz=0.55 um.
+# Analysis only; no FDTD run. Reference fields are interpolated to the patterned y-z grid.
+
+pattern_file293a="D:/FDTD_File/ar_incoupler_FDTD_stage292b_FINAL_GEOMETRY_WIDTH1P4UM_wx6um_wz0p55um_zdomain2p8um_PATTERNED_COMPLETE_638nm.fsp";
+reference_file293a="D:/FDTD_File/ar_incoupler_FDTD_stage281c_FINAL_GEOMETRY_wx6um_wz0p55um_zdomain2p8um_REFERENCE_COMPLETE_638nm.fsp";
+
+load(pattern_file293a);
+yP293a=getdata("power_right","y");
+zP293a=getdata("power_right","z");
+fP293a=getdata("power_right","f");
+EyP293a=pinch(getdata("power_right","Ey"));
+EzP293a=pinch(getdata("power_right","Ez"));
+HyP293a=pinch(getdata("power_right","Hy"));
+HzP293a=pinch(getdata("power_right","Hz"));
+loaddata("D:/FDTD_File/stage281a_final_geometry_wz0p55_setup_audit.ldf");
+PsrcP293a=Pimport_direct_W281a;
+
+load(reference_file293a);
+yR293a=getdata("power_right","y");
+zR293a=getdata("power_right","z");
+fR293a=getdata("power_right","f");
+EyRnative293a=pinch(getdata("power_right","Ey"));
+EzRnative293a=pinch(getdata("power_right","Ez"));
+HyRnative293a=pinch(getdata("power_right","Hy"));
+HzRnative293a=pinch(getdata("power_right","Hz"));
+PsrcR293a=PsrcP293a;
+
+EyRi293a=interp(EyRnative293a,yR293a,zR293a,yP293a,zP293a);
+EzRi293a=interp(EzRnative293a,yR293a,zR293a,yP293a,zP293a);
+HyRi293a=interp(HyRnative293a,yR293a,zR293a,yP293a,zP293a);
+HzRi293a=interp(HzRnative293a,yR293a,zR293a,yP293a,zP293a);
+
+EyS293a=EyP293a-EyRi293a;
+EzS293a=EzP293a-EzRi293a;
+HyS293a=HyP293a-HyRi293a;
+HzS293a=HzP293a-HzRi293a;
+
+PxP293a=real(EyP293a*conj(HzP293a)-EzP293a*conj(HyP293a));
+PxRi293a=real(EyRi293a*conj(HzRi293a)-EzRi293a*conj(HyRi293a));
+PxS293a=real(EyS293a*conj(HzS293a)-EzS293a*conj(HyS293a));
+PxX293a=real(EyRi293a*conj(HzS293a)-EzRi293a*conj(HyS293a)+EyS293a*conj(HzRi293a)-EzS293a*conj(HyRi293a));
+
+PP293a=0.5*integrate(PxP293a,1:2,yP293a,zP293a);
+PRi293a=0.5*integrate(PxRi293a,1:2,yP293a,zP293a);
+PS293a=0.5*integrate(PxS293a,1:2,yP293a,zP293a);
+PX293a=0.5*integrate(PxX293a,1:2,yP293a,zP293a);
+Preconstructed293a=PRi293a+PS293a+PX293a;
+reconstruction_error_W293a=PP293a-Preconstructed293a;
+reconstruction_relative_error293a=reconstruction_error_W293a/PP293a;
+
+TP293a=PP293a/PsrcP293a;
+TRi293a=PRi293a/PsrcP293a;
+TS293a=PS293a/PsrcP293a;
+TX293a=PX293a/PsrcP293a;
+grid_y_max_error293a=max(abs(yP293a-yR293a));
+grid_z_max_error293a=max(abs(zP293a-zR293a));
+sourcepower_ratio293a=1;
+loaddata("D:/FDTD_File/stage281c_final_geometry_wz0p55_reference_direct_power.ldf");
+reference_native_signed293a=eta_right281c;
+reference_native_on_pattern_norm293a=reference_native_signed293a;
+reference_interp_minus_native_pp293a=(TRi293a-reference_native_on_pattern_norm293a)*100;
+
+PzP293a=0.5*integrate(PxP293a,1,yP293a);
+PzRi293a=0.5*integrate(PxRi293a,1,yP293a);
+PzS293a=0.5*integrate(PxS293a,1,yP293a);
+PzX293a=0.5*integrate(PxX293a,1,yP293a);
+
+savedata("D:/FDTD_File/stage293a_width1p4um_wz0p55_coherent_field_decomposition.ldf",yP293a,zP293a,fP293a,grid_y_max_error293a,grid_z_max_error293a,PsrcP293a,PsrcR293a,sourcepower_ratio293a,reference_native_signed293a,reference_native_on_pattern_norm293a,reference_interp_minus_native_pp293a,PP293a,PRi293a,PS293a,PX293a,Preconstructed293a,reconstruction_error_W293a,reconstruction_relative_error293a,TP293a,TRi293a,TS293a,TX293a,PzP293a,PzRi293a,PzS293a,PzX293a);
+
+?"=== STAGE293A WIDTH1P4UM WZ0P55 COHERENT FIELD DECOMPOSITION ===";
+?"grid_y_error_nm="+num2str(grid_y_max_error293a*1e9)+", grid_z_error_nm="+num2str(grid_z_max_error293a*1e9)+", sourcepower_ratio="+num2str(sourcepower_ratio293a);
+?"pattern_total_percent="+num2str(TP293a*100)+", reference_background_percent="+num2str(TRi293a*100);
+?"scattered_field_percent="+num2str(TS293a*100)+", cross_term_percent="+num2str(TX293a*100);
+?"reconstructed_percent="+num2str((TRi293a+TS293a+TX293a)*100)+", reconstruction_relative_error="+num2str(reconstruction_relative_error293a);
+
+
+
+
+
+
+
+
+
+
+
+

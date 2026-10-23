@@ -1,0 +1,11 @@
+﻿{
+  "grid_y_max_error297a": 0.0,
+  "grid_z_max_error297a": 0.0,
+  "sourcepower_ratio297a": 1.0,
+  "reconstruction_relative_error297a": 0.0,
+  "reference_interp_minus_native_pp297a": 0.0,
+  "TP297a": 0.07004177010778434,
+  "TRi297a": -0.005321963309926818,
+  "TS297a": 0.07654342186265133,
+  "TX297a": -0.0011796884449401602
+}
